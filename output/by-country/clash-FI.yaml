@@ -5,43 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - netmix
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 02 - netmix
-  server: 85.192.49.126
-  port: 443
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ATdIZVxBUo5bVQJtcoWBU1k8qlHdNniJ2gF1iDc8rEQ
-    short-id: 76efb045
-  servername: fi3.gofizzin.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - netmix
-  server: 177.202.75.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 04 - netmix
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 05 - netmix
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - netmix
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -53,33 +27,30 @@ proxies:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   servername: apple.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - netmix
-  server: 45.144.234.157
-  port: 14430
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 03 - netmix
+  server: 94.183.164.119
+  port: 24433
   udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 07 - netmix
-  server: ip3.ipspanel.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 03cc39b9-0b75-4297-b284-8158cfbb959a
-  tls: true
-  servername: T.panel001.ir
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@TurboVpn10
+- name: 🇫🇮 芬兰 (Finland) 04 - netmix
+  server: 104.21.25.112
+  port: 443
+  udp: true
+  type: vless
+  uuid: b61580cd-bc64-466c-bde9-3533aed885d0
+  tls: true
+  servername: eu.workingserverpro.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /user
     headers:
-      Host: T.panel001.ir
+      Host: eu.workingserverpro.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,9 +60,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - netmix
   - 🇫🇮 芬兰 (Finland) 03 - netmix
   - 🇫🇮 芬兰 (Finland) 04 - netmix
-  - 🇫🇮 芬兰 (Finland) 05 - netmix
-  - 🇫🇮 芬兰 (Finland) 06 - netmix
-  - 🇫🇮 芬兰 (Finland) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,8 +69,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - netmix
   - 🇫🇮 芬兰 (Finland) 03 - netmix
   - 🇫🇮 芬兰 (Finland) 04 - netmix
-  - 🇫🇮 芬兰 (Finland) 05 - netmix
-  - 🇫🇮 芬兰 (Finland) 06 - netmix
-  - 🇫🇮 芬兰 (Finland) 07 - netmix
 rules:
 - MATCH,PROXIES

@@ -13,6 +13,17 @@ proxies:
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: false
 - name: 🇧🇷 巴西 (Brazil) 02 - netmix
+  server: platform101.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 03 - netmix
   server: 103.14.27.207
   port: 1270
   udp: true
@@ -23,7 +34,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇧🇷 巴西 (Brazil) 03 - netmix
+- name: 🇧🇷 巴西 (Brazil) 04 - netmix
   server: 103.88.232.55
   port: 1270
   udp: true
@@ -42,6 +53,7 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - netmix
   - 🇧🇷 巴西 (Brazil) 02 - netmix
   - 🇧🇷 巴西 (Brazil) 03 - netmix
+  - 🇧🇷 巴西 (Brazil) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +62,6 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - netmix
   - 🇧🇷 巴西 (Brazil) 02 - netmix
   - 🇧🇷 巴西 (Brazil) 03 - netmix
+  - 🇧🇷 巴西 (Brazil) 04 - netmix
 rules:
 - MATCH,PROXIES

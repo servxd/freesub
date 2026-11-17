@@ -16,8 +16,22 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 02 - netmix",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 03 - netmix",
       "server": "103.14.27.207",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -30,7 +44,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - netmix",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - netmix",
       "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -48,7 +62,8 @@
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - netmix",
         "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 03 - netmix",
+        "🇧🇷 巴西 (Brazil) 04 - netmix"
       ]
     },
     {
@@ -57,7 +72,8 @@
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - netmix",
         "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 03 - netmix",
+        "🇧🇷 巴西 (Brazil) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

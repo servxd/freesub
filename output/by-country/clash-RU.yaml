@@ -5,45 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - netmix
-  server: 185.79.19.8
-  port: 443
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YLcEO7lE6TeHKOMwRMkzLwaka7JOCbV8WCQ15eQVWEE
-    short-id: 1d482377da
-  servername: fazuno.net
-  client-fingerprint: ''
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - netmix
-  server: 178.162.147.131
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OH9jKzqAqEg98VDxmxReqrC_jbJWNwr-ipj2cNRgazc
-    short-id: 2237b916
-  servername: zovira.me
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - netmix
-  server: 5.253.86.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 51ZCyVOxvcD_smARtd9mV-3Rh_WurOzMGRFxk9u2Kgo
-    short-id: fa1754221e4c5f9e
-  servername: nl3.gofizz.in
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - netmix
   server: 147.45.47.101
   port: 8443
   udp: true
@@ -55,80 +23,21 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
   servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - netmix
-  server: 87.228.101.43
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 03 - netmix
+  server: 200.169.179.233
   port: 443
   udp: true
   type: vless
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  reality-opts:
-    public-key: n8hYILIctbUJNJqFXLxQY2Fx2f9bzfCMRWAgETc6GGY
-    short-id: 009818
-  servername: 360.yandex.ru
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: ''
-- name: 🇷🇺 俄罗斯 (Russia) 06 - netmix
-  server: 37.235.247.81
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 07 - netmix
-  server: 178.130.46.226
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3619ae0e-bd3a-458c-bb0a-c0479019d9ec
-  flow: xtls-rprx-vision
-  tls: true
-  servername: serv1.fishtohome.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 08 - netmix
-  server: 185.231.101.94
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
-    short-id: 51057fb54d2364f4
-  servername: fuzora.net
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09 - netmix
-  server: 87.228.56.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e39H8hQXcwfiUnkUOmG0JkBTX5VCxaBQ3_EWEj9PZRc
-    short-id: e938e26c4425
-  servername: ru4.gofizzin.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 10 - netmix
-  server: 103.88.243.142
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - netmix
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 04 - netmix
   server: 201.24.121.243
   port: 443
   udp: true
@@ -141,41 +50,60 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 12 - netmix
-  server: 200.169.179.233
+- name: 🇷🇺 俄罗斯 (Russia) 05 - netmix
+  server: 212.233.90.78
   port: 443
   udp: true
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 9548ef84-b54d-41dc-b17c-9da21d52ba82
+  flow: xtls-rprx-vision
   tls: true
-  servername: vps3.nemnogogo.com
+  reality-opts:
+    public-key: FwPphm8xGAKY6u74WDRVrcVye3A7GdLDfJoNSDWFsFQ
+    short-id: 2c6df23e
+  servername: birch-ledger.justext.space
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - netmix
+  server: 116.206.95.231
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 4a923161-156f-4914-8cac-762fb2433bfb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CG0mVPuvPcfZjplA21zehlqoDpGHihJBK8K_u1zfhgQ
+    short-id: ee4ea980
+  servername: 116.206.95.231
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07 - netmix
+  server: clover.filnex.baby
+  port: 443
+  udp: true
+  type: vless
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  tls: true
+  servername: clover.filnex.baby
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 13 - netmix
-  server: 185.22.153.117
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 14 - netmix
-  server: 95.129.236.117
-  port: 443
-  udp: true
-  type: vless
-  uuid: 77998cc6-8a4d-4251-b974-ebff48a84c4d
-  tls: true
-  servername: cdn.dash.gearmonster.org
-  skip-cert-verify: false
-  client-fingerprint: safari
   network: ws
   ws-opts:
-    path: /edge/node8/push
+    path: /api/de6/stream
     headers:
-      Host: cdn.dash.gearmonster.org
+      Host: clover.filnex.baby
+- name: 🇷🇺 俄罗斯 (Russia) 08 - netmix
+  server: 37.235.247.81
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -189,12 +117,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - netmix
   - 🇷🇺 俄罗斯 (Russia) 07 - netmix
   - 🇷🇺 俄罗斯 (Russia) 08 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 09 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 10 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 11 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 12 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 13 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 14 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -208,11 +130,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - netmix
   - 🇷🇺 俄罗斯 (Russia) 07 - netmix
   - 🇷🇺 俄罗斯 (Russia) 08 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 09 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 10 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 11 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 12 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 13 - netmix
-  - 🇷🇺 俄罗斯 (Russia) 14 - netmix
 rules:
 - MATCH,PROXIES

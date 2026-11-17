@@ -5,21 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - netmix
-  server: 186.190.215.251
+  server: 23.166.88.189
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 02 - netmix
-  server: 79.127.184.104
+  server: 23.166.88.127
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 03 - netmix
-  server: 23.166.88.189
+  server: 186.190.215.251
   port: 19999
   udp: true
   type: ss
@@ -41,43 +41,45 @@ proxies:
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 06 - netmix
-  server: 91.214.190.127
-  port: 443
+  server: 193.233.89.130
+  port: 8443
   udp: true
   type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
+  uuid: 7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe
   tls: true
   reality-opts:
-    public-key: 3fcmILwQG2sbwo58XW9Z1lziNQXmAFwUglFuXQFePRI
-    short-id: 95da6299f1
-  servername: ch1.gofizzin.com
+    public-key: xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c
+  servername: g.play2go.gay
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 - name: 🇨🇭 瑞士 (Switzerland) 07 - netmix
-  server: 23.166.88.127
-  port: 19999
+  server: 208.69.78.60
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 08 - netmix
+  server: 208.69.78.33
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 09 - netmix
   server: 208.69.78.222
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 09 - netmix
-  server: 208.69.78.19
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 10 - netmix
   server: 208.69.78.29
@@ -86,35 +88,6 @@ proxies:
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 11 - netmix
-  server: 208.69.78.60
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 12 - netmix
-  server: 74.161.152.237
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 13 - netmix
-  server: 208.69.78.33
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -131,9 +104,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 08 - netmix
   - 🇨🇭 瑞士 (Switzerland) 09 - netmix
   - 🇨🇭 瑞士 (Switzerland) 10 - netmix
-  - 🇨🇭 瑞士 (Switzerland) 11 - netmix
-  - 🇨🇭 瑞士 (Switzerland) 12 - netmix
-  - 🇨🇭 瑞士 (Switzerland) 13 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,8 +119,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 08 - netmix
   - 🇨🇭 瑞士 (Switzerland) 09 - netmix
   - 🇨🇭 瑞士 (Switzerland) 10 - netmix
-  - 🇨🇭 瑞士 (Switzerland) 11 - netmix
-  - 🇨🇭 瑞士 (Switzerland) 12 - netmix
-  - 🇨🇭 瑞士 (Switzerland) 13 - netmix
 rules:
 - MATCH,PROXIES
