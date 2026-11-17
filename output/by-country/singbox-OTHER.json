@@ -6,41 +6,131 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - netmix",
-      "server": "172.67.156.121",
+      "server": "172.66.203.67",
       "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.gptcloudai.com",
+        "server_name": "vmess.lbw666.dpdns.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
+        "path": "/ws",
         "headers": {
-          "Host": "www.gptcloudai.com"
+          "Host": "vmess.lbw666.dpdns.org"
         }
       }
     },
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - netmix",
-      "server": "172.67.156.121",
+      "server": "172.66.203.67",
       "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.gptcloudai.com",
+        "server_name": "vmess.lbw666.dpdns.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
+        "path": "/ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - netmix",
+      "server": "172.66.203.67",
+      "server_port": 443,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vmess.lbw666.dpdns.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
         "headers": {
-          "Host": "www.gptcloudai.com"
+          "Host": "vmess.lbw666.dpdns.org"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 04 - netmix",
+      "server": "172.66.203.67",
+      "server_port": 443,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vmess.lbw666.dpdns.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 05 - netmix",
+      "server": "172.66.203.67",
+      "server_port": 443,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vmess.lbw666.dpdns.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 06 - netmix",
+      "server": "172.66.203.67",
+      "server_port": 443,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vmess.lbw666.dpdns.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 07 - netmix",
+      "server": "fast.145779.xyz",
+      "server_port": 2053,
+      "uuid": "c83f15bf-1817-4ec8-a19f-6393d226434c",
+      "tls": {
+        "enabled": true,
+        "server_name": "fast.145779.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-tesla"
       }
     },
     {
@@ -49,7 +139,12 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - netmix",
-        "🌐 其他地区 (Other) 02 - netmix"
+        "🌐 其他地区 (Other) 02 - netmix",
+        "🌐 其他地区 (Other) 03 - netmix",
+        "🌐 其他地区 (Other) 04 - netmix",
+        "🌐 其他地区 (Other) 05 - netmix",
+        "🌐 其他地区 (Other) 06 - netmix",
+        "🌐 其他地区 (Other) 07 - netmix"
       ]
     },
     {
@@ -57,7 +152,12 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - netmix",
-        "🌐 其他地区 (Other) 02 - netmix"
+        "🌐 其他地区 (Other) 02 - netmix",
+        "🌐 其他地区 (Other) 03 - netmix",
+        "🌐 其他地区 (Other) 04 - netmix",
+        "🌐 其他地区 (Other) 05 - netmix",
+        "🌐 其他地区 (Other) 06 - netmix",
+        "🌐 其他地区 (Other) 07 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

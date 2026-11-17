@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - netmix
-  server: 198.16.113.219
-  port: 8443
-  udp: true
-  type: vless
-  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-    short-id: 69984b9e02545831
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇷 IR 02 - netmix
   server: 198.16.113.221
   port: 8443
   udp: true
@@ -29,13 +16,65 @@ proxies:
     public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
     short-id: 69984b9e02545831
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇷 IR 03 - netmix
-  server: 198.16.113.220
+  client-fingerprint: firefox
+- name: 🇮🇷 IR 02 - netmix
+  server: 198.16.113.222
   port: 8443
   udp: true
   type: vless
   uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇷 IR 03 - netmix
+  server: 198.16.113.219
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 04 - netmix
+  server: 198.16.113.218
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 05 - netmix
+  server: 198.16.113.220
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 06 - netmix
+  server: 50.7.245.202
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -51,6 +90,9 @@ proxy-groups:
   - 🇮🇷 IR 01 - netmix
   - 🇮🇷 IR 02 - netmix
   - 🇮🇷 IR 03 - netmix
+  - 🇮🇷 IR 04 - netmix
+  - 🇮🇷 IR 05 - netmix
+  - 🇮🇷 IR 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +101,8 @@ proxy-groups:
   - 🇮🇷 IR 01 - netmix
   - 🇮🇷 IR 02 - netmix
   - 🇮🇷 IR 03 - netmix
+  - 🇮🇷 IR 04 - netmix
+  - 🇮🇷 IR 05 - netmix
+  - 🇮🇷 IR 06 - netmix
 rules:
 - MATCH,PROXIES

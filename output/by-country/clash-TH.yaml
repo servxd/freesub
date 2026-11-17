@@ -13,26 +13,29 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - netmix
-  server: th001.zestapp778.com
-  port: 33079
+  server: 99.86.77.43
+  port: 80
   udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: th001.zestapp778.com
-  skip-cert-verify: true
+  type: vless
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
 - name: 🇹🇭 泰国 (Thailand) 03 - netmix
-  server: 45.154.26.63
+  server: 203.146.170.195
   port: 443
   udp: true
   type: vless
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: 4LwH3FEPZZqjen5iuUlRqV4Buatjv8DxL3KUvE1ULWs
+    short-id: faaf02e8469f34
+  servername: th1.gofizzin.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

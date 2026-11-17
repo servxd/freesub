@@ -12,15 +12,40 @@
       "password": "BWyPPTusFKhGgzKh"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇲🇽 墨西哥 (Mexico) 02 - netmix",
-      "server": "mx001.zestapp778.com",
-      "server_port": 15083,
-      "password": "5t6i121em5lkmsmk",
+      "server": "40.233.23.236",
+      "server_port": 63245,
+      "uuid": "f1506bf6-7d4c-427f-b053-05e0f1b43a04",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "mx001.zestapp778.com",
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
+          "short_id": "1f2519bb96e5589c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇽 墨西哥 (Mexico) 03 - netmix",
+      "server": "45.134.9.133",
+      "server_port": 8443,
+      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ul-mexico1.09vpn.com",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
@@ -29,7 +54,8 @@
       "outbounds": [
         "auto",
         "🇲🇽 墨西哥 (Mexico) 01 - netmix",
-        "🇲🇽 墨西哥 (Mexico) 02 - netmix"
+        "🇲🇽 墨西哥 (Mexico) 02 - netmix",
+        "🇲🇽 墨西哥 (Mexico) 03 - netmix"
       ]
     },
     {
@@ -37,7 +63,8 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇽 墨西哥 (Mexico) 01 - netmix",
-        "🇲🇽 墨西哥 (Mexico) 02 - netmix"
+        "🇲🇽 墨西哥 (Mexico) 02 - netmix",
+        "🇲🇽 墨西哥 (Mexico) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

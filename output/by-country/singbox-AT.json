@@ -12,18 +12,53 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - netmix",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - netmix",
+      "server": "154.47.19.225",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - netmix",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16308,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - netmix"
+        "🇦🇹 奥地利 (Austria) 01 - netmix",
+        "🇦🇹 奥地利 (Austria) 02 - netmix",
+        "🇦🇹 奥地利 (Austria) 03 - netmix",
+        "🇦🇹 奥地利 (Austria) 04 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - netmix"
+        "🇦🇹 奥地利 (Austria) 01 - netmix",
+        "🇦🇹 奥地利 (Austria) 02 - netmix",
+        "🇦🇹 奥地利 (Austria) 03 - netmix",
+        "🇦🇹 奥地利 (Austria) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,35 +12,36 @@
       "security": "auto"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - netmix",
-      "server": "th001.zestapp778.com",
-      "server_port": 33079,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": true
+      "server": "99.86.77.43",
+      "server_port": 80,
+      "uuid": "f4c5605a-8424-441e-b23d-d6384d012c28",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "dcm4kwis2exkw.cloudfront.net"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - netmix",
-      "server": "45.154.26.63",
+      "server": "203.146.170.195",
       "server_port": 443,
-      "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "th1.gofizzin.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk",
-          "short_id": "3c032a7e"
+          "public_key": "4LwH3FEPZZqjen5iuUlRqV4Buatjv8DxL3KUvE1ULWs",
+          "short_id": "faaf02e8469f34"
         }
       }
     },
