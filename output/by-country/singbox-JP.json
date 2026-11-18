@@ -4,60 +4,193 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - netmix",
-      "server": "168.110.21.56",
-      "server_port": 18453,
-      "uuid": "1751bebc-1bf1-420c-8b9d-97157aad179b"
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 - netmix",
+      "server": "155.248.175.201",
+      "server_port": 23169,
+      "uuid": "3eb053cb-d6f8-4b31-8180-222e1cc6f8ff",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "djj.zjlo.top",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 02 - netmix",
-      "server": "jpa.123069.xyz",
+      "tag": "🇯🇵 日本 (Japan) 03 - netmix",
+      "server": "168.138.205.100",
       "server_port": 53758,
       "method": "aes-128-gcm",
       "password": "Bwlqh7GcFB"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 03 - netmix",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 04 - netmix",
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 05 - netmix",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 06 - netmix",
+      "server": "64.176.57.251",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "YKwDz3mFpT9vGcL8nBs5dHrA2sxM"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 07 - netmix",
+      "server": "168.110.21.56",
+      "server_port": 18453,
+      "uuid": "1751bebc-1bf1-420c-8b9d-97157aad179b"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 08 - netmix",
+      "server": "141.11.139.102",
+      "server_port": 32515,
+      "uuid": "081dbf5a-d8b6-40c8-96f8-3c4ca9f50442",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 09 - netmix",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "None"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 10 - netmix",
+      "server": "104.16.10.56",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 04 - netmix",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "tag": "🇯🇵 日本 (Japan) 11 - netmix",
+      "server": "8.209.247.109",
+      "server_port": 443,
+      "password": "usqmqUKJFIlCmvkCNSY64L3k",
       "tls": {
         "enabled": true,
-        "server_name": "138.3.208.26",
+        "server_name": "8.209.247.109",
         "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 05 - netmix",
-      "server": "168.110.63.247",
-      "server_port": 8081,
-      "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
+      "tag": "🇯🇵 日本 (Japan) 12 - netmix",
+      "server": "45.76.100.238",
+      "server_port": 10086,
+      "uuid": "ee2927f6-b76a-4011-957c-fe7c4865b36c",
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vless"
+        "path": "/ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 06 - netmix",
-      "server": "djj.zjlo.top",
+      "tag": "🇯🇵 日本 (Japan) 13 - netmix",
+      "server": "103.75.118.228",
+      "server_port": 11452,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 14 - netmix",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 15 - netmix",
+      "server": "158.101.151.157",
+      "server_port": 443,
+      "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8",
+          "short_id": "684c7531e599dec0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 16 - netmix",
+      "server": "155.248.175.201",
       "server_port": 23169,
       "uuid": "9da605d3-f5f7-4135-f806-450f036f9351",
       "flow": "xtls-rprx-vision",
@@ -73,59 +206,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 - netmix",
-      "server": "158.101.151.157",
-      "server_port": 443,
-      "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8",
-          "short_id": "684c7531e599dec0"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 08 - netmix",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "jp01.a0a.xyz"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 09 - netmix",
-      "server": "193.123.160.109",
-      "server_port": 8443,
-      "password": "F3NzMNuYnG7akU2mSlBY",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 17 - netmix",
       "server": "45.76.222.108",
       "server_port": 443,
       "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
@@ -152,7 +233,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 18 - netmix",
       "server": "172.105.216.21",
       "server_port": 443,
       "uuid": "76f1ce49-bcea-4680-b9ef-16592269445b",
@@ -176,10 +257,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - netmix",
-      "server": "139.162.91.239",
+      "tag": "🇯🇵 日本 (Japan) 19 - netmix",
+      "server": "172.104.86.181",
       "server_port": 443,
-      "uuid": "b0dc852a-97ec-4d4e-9179-f0e5c2ef1489",
+      "uuid": "010431f3-04f6-4404-a801-b93bf2e3c2b2",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -189,32 +270,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "7PBmAR6CGAh2naIi09rlP_PtmLmqhlXF_toZEdAHmRo",
-          "short_id": "7c6d6833"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13 - netmix",
-      "server": "45.77.8.233",
-      "server_port": 443,
-      "uuid": "242212a6-200b-4c09-b2e5-86a8dd490331",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JSC_NT5_PEEbNCQIJjSSlpwkWWF94o0XAP3iboF6nlY",
-          "short_id": "de193635"
+          "public_key": "ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk",
+          "short_id": "c8559ca1"
         }
       },
       "transport": {
@@ -226,65 +283,80 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - netmix",
-      "server": "139.162.91.224",
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 20 - netmix",
+      "server": "84.247.155.196",
       "server_port": 443,
-      "uuid": "ff3038b1-a2f5-428f-89cd-5d5e4efba8e7",
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 21 - netmix",
+      "server": "zfapi.zalolink.com",
+      "server_port": 43149,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
+        "server_name": "psstatic.cdn.bcebos.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk",
-          "short_id": "e5b03494"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
+          "public_key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
+          "short_id": "15aa0ad4"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15 - netmix",
-      "server": "45.76.106.69",
-      "server_port": 443,
-      "uuid": "db102c51-5f7f-4283-b9c1-942c5c6e2616",
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 22 - netmix",
+      "server": "168.110.63.247",
+      "server_port": 8081,
+      "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 23 - netmix",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 24 - netmix",
+      "server": "or3.sfacg.uk",
+      "server_port": 2083,
+      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nZzY--8K_-mm8x4JDzkUFt1be1SQzriGIOmYkbpq1C8",
-          "short_id": "034f5d5a"
-        }
+        "server_name": "or3.sfacg.uk",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/or3",
         "headers": {
-          "Host": "itunes.apple.com"
+          "Host": "or3.sfacg.uk"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 25 - netmix",
       "server": "djj.zjlo.top",
       "server_port": 23169,
-      "uuid": "f67b1159-a61f-4ae4-9844-0701b716a290",
+      "uuid": "9da605d3-f5f7-4135-f806-450f036f9351",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -298,46 +370,57 @@
     },
     {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 17 - netmix",
-      "server": "141.11.139.102",
-      "server_port": 32515,
-      "uuid": "081dbf5a-d8b6-40c8-96f8-3c4ca9f50442",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18 - netmix",
-      "server": "104.16.10.234",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tag": "🇯🇵 日本 (Japan) 26 - netmix",
+      "server": "162.159.130.234",
+      "server_port": 2083,
+      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
+        "server_name": "cdn.sfacg.uk",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/or3",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "or3.sfacg.uk"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 19 - netmix",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 27 - netmix",
+      "server": "155.248.175.201",
+      "server_port": 23169,
+      "uuid": "f67b1159-a61f-4ae4-9844-0701b716a290",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "djj.zjlo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 20 - netmix",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 28 - netmix",
+      "server": "djj.zjlo.top",
+      "server_port": 23169,
+      "uuid": "7318caa1-93d1-4a9d-c481-504599902700",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "djj.zjlo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "selector",
@@ -363,7 +446,15 @@
         "🇯🇵 日本 (Japan) 17 - netmix",
         "🇯🇵 日本 (Japan) 18 - netmix",
         "🇯🇵 日本 (Japan) 19 - netmix",
-        "🇯🇵 日本 (Japan) 20 - netmix"
+        "🇯🇵 日本 (Japan) 20 - netmix",
+        "🇯🇵 日本 (Japan) 21 - netmix",
+        "🇯🇵 日本 (Japan) 22 - netmix",
+        "🇯🇵 日本 (Japan) 23 - netmix",
+        "🇯🇵 日本 (Japan) 24 - netmix",
+        "🇯🇵 日本 (Japan) 25 - netmix",
+        "🇯🇵 日本 (Japan) 26 - netmix",
+        "🇯🇵 日本 (Japan) 27 - netmix",
+        "🇯🇵 日本 (Japan) 28 - netmix"
       ]
     },
     {
@@ -389,7 +480,15 @@
         "🇯🇵 日本 (Japan) 17 - netmix",
         "🇯🇵 日本 (Japan) 18 - netmix",
         "🇯🇵 日本 (Japan) 19 - netmix",
-        "🇯🇵 日本 (Japan) 20 - netmix"
+        "🇯🇵 日本 (Japan) 20 - netmix",
+        "🇯🇵 日本 (Japan) 21 - netmix",
+        "🇯🇵 日本 (Japan) 22 - netmix",
+        "🇯🇵 日本 (Japan) 23 - netmix",
+        "🇯🇵 日本 (Japan) 24 - netmix",
+        "🇯🇵 日本 (Japan) 25 - netmix",
+        "🇯🇵 日本 (Japan) 26 - netmix",
+        "🇯🇵 日本 (Japan) 27 - netmix",
+        "🇯🇵 日本 (Japan) 28 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,69 +6,83 @@
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - netmix",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21018,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - netmix",
       "server": "zfd-hkv1.kunlun01dns.com",
       "server_port": 16114,
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - netmix",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21018,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - netmix",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - netmix",
-      "server": "43.103.2.53",
+      "server": "202.146.222.29",
       "server_port": 443,
-      "password": "hAUdd15a7YGHUSgiPOUz",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "43.103.2.53",
+        "server_name": "https%3A%2F%2Ft.me%2Fwangcai2%E2%81%BF%C3%9F%C2%AB%E2%81%BF%C3%9F",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "9veAh9pTbrAfDwM1fIYI"
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
-      "server": "47.242.93.89",
-      "server_port": 12012,
-      "password": "12012",
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - netmix",
+      "server": "8.217.1.203",
+      "server_port": 8443,
+      "uuid": "8b17beac-b143-447d-aa68-14cbb121a602",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ali-hk.b-gfw.cfd",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38",
+          "short_id": "0bf55f64"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - netmix",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+        "server_name": "https://t.me/clashv8🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
+      "server": "free.fugui.lol",
+      "server_port": 47396,
+      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swdist.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
+          "short_id": "fa514b83"
+        }
       }
     },
     {
@@ -93,59 +107,22 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 08 - netmix",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "202.146.222.89",
-        "insecure": true
-      }
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 09 - netmix",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "47.242.93.89",
+      "server_port": 12012,
+      "password": "12012",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
-      "server": "free.fugui.lol",
-      "server_port": 47396,
-      "uuid": "ead3595f-4020-4e76-a3ec-c248e1a2f2f7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swdist.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ",
-          "short_id": "fa514b83"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - netmix",
-      "server": "3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "92bd8c68-6434-11ee-b644-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com",
+        "server_name": "ali-hk.b-gfw.cfd",
         "insecure": true
       }
     },
@@ -162,9 +139,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 07 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 08 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 09 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 11 - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 09 - netmix"
       ]
     },
     {
@@ -179,9 +154,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 07 - netmix",
         "🇭🇰 中国香港 (Hong Kong) 08 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 09 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 10 - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 11 - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 09 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

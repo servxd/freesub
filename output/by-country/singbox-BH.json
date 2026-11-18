@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - netmix",
-      "server": "94.183.234.245",
+      "tag": "🇧🇭 BH 01 - netmix",
+      "server": "bh1.vpnjantit.com",
       "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
+      "uuid": "b36a16e4-ded8-11f1-bdea-5254b0a2c347",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
+          "public_key": "lDEkUokSL-mrM1jsH8UKs8-3cfJMvkxhY7k37iBkFi4",
+          "short_id": "32b72239bc69220e"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - netmix"
+        "🇧🇭 BH 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - netmix"
+        "🇧🇭 BH 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

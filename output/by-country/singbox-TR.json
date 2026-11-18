@@ -4,20 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - netmix",
-      "server": "153.56.210.134",
-      "server_port": 34121,
-      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
-      }
+      "server": "206.1.103.22",
+      "server_port": 44364,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "Bz8UfpIg1mfq1NKzWJHCqMJKnir+XnFlmg66uhQwadg=:2uDsVU+xNw+1DgHOubNVu5OfnYH8VjSvft2LptD0tEE="
     },
     {
       "type": "hysteria2",
@@ -39,6 +31,22 @@
       "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - netmix",
       "server": "153.56.210.134",
+      "server_port": 34121,
+      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - netmix",
+      "server": "153.56.210.134",
       "server_port": 57251,
       "password": "ff0343ad-1c9f-4986-8c62-c01935b508ca",
       "tls": {
@@ -53,13 +61,34 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - netmix",
-      "server": "45.141.148.46",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - netmix",
+      "server": "77.83.245.79",
+      "server_port": 443,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr1-r.bankai.party",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - netmix",
+      "server": "45.141.148.48",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "tr1b.galioncc.com",
+        "server_name": "net-svc-mgr.galioncc.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -79,7 +108,9 @@
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
         "🇹🇷 土耳其 (Turkey) 02 - netmix",
         "🇹🇷 土耳其 (Turkey) 03 - netmix",
-        "🇹🇷 土耳其 (Turkey) 04 - netmix"
+        "🇹🇷 土耳其 (Turkey) 04 - netmix",
+        "🇹🇷 土耳其 (Turkey) 05 - netmix",
+        "🇹🇷 土耳其 (Turkey) 06 - netmix"
       ]
     },
     {
@@ -89,7 +120,9 @@
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
         "🇹🇷 土耳其 (Turkey) 02 - netmix",
         "🇹🇷 土耳其 (Turkey) 03 - netmix",
-        "🇹🇷 土耳其 (Turkey) 04 - netmix"
+        "🇹🇷 土耳其 (Turkey) 04 - netmix",
+        "🇹🇷 土耳其 (Turkey) 05 - netmix",
+        "🇹🇷 土耳其 (Turkey) 06 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

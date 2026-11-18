@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - netmix
   server: 217.30.10.44
-  port: 9076
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 02 - netmix
   server: 217.30.10.44
   port: 9063
@@ -20,80 +20,78 @@ proxies:
   password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 03 - netmix
   server: 217.30.10.44
-  port: 9062
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 04 - netmix
-  server: 217.30.10.44
-  port: 9099
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 05 - netmix
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 06 - netmix
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 07 - netmix
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 08 - netmix
-  server: 217.30.10.44
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 09 - netmix
   server: 217.30.10.70
-  port: 9018
+  port: 9020
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: fG2artUmHfNT2cX7
-- name: 🇵🇱 波兰 (Poland) 10 - netmix
+  password: BNmAXXxAHYpTRdzu
+- name: 🇵🇱 波兰 (Poland) 05 - netmix
   server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 11 - netmix
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 12 - netmix
-  server: 217.30.10.70
-  port: 9088
+- name: 🇵🇱 波兰 (Poland) 06 - netmix
+  server: 217.30.10.44
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: f8npKgNzdkss2ytn
+  password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 07 - netmix
+  server: 217.30.10.70
+  port: 9040
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: p9z5BVADH2YFs3MN
+- name: 🇵🇱 波兰 (Poland) 08 - netmix
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 09 - netmix
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 10 - netmix
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 11 - netmix
+  server: 217.30.10.70
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇵🇱 波兰 (Poland) 12 - netmix
+  server: 45.194.66.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 31tawwo0.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 13 - netmix
   server: 80.47.10.106
   port: 443
@@ -107,16 +105,18 @@ proxies:
   servername: pl8.galioncc.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 14 - netmix
-  server: 179.253.101.162
-  port: 443
+  server: 54.37.131.126
+  port: 80
   udp: true
-  type: vless
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app.streamru17.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 15 - netmix
   server: 82.118.22.161
   port: 443
@@ -129,20 +129,7 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 16 - netmix
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -163,7 +150,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 13 - netmix
   - 🇵🇱 波兰 (Poland) 14 - netmix
   - 🇵🇱 波兰 (Poland) 15 - netmix
-  - 🇵🇱 波兰 (Poland) 16 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -184,6 +170,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 13 - netmix
   - 🇵🇱 波兰 (Poland) 14 - netmix
   - 🇵🇱 波兰 (Poland) 15 - netmix
-  - 🇵🇱 波兰 (Poland) 16 - netmix
 rules:
 - MATCH,PROXIES

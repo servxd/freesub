@@ -6,33 +6,23 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   server: dog-hk.kunlun01dns.com
-  port: 21019
+  port: 21020
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
-  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
 rules:
 - MATCH,PROXIES

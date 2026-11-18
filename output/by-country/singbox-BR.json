@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 01 - netmix",
-      "server": "103.14.27.207",
+      "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -24,14 +24,36 @@
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false
+        "server_name": "216.238.104.154",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 03 - netmix",
-      "server": "103.88.232.55",
+      "server": "137.131.177.121",
+      "password": "z/yIxn3sBV03PkAxbnX8rg==",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-br.whuiy.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "z/yIxn3sBV03PkAxbnX8rg=="
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - netmix",
+      "server": "103.14.27.207",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -48,7 +70,8 @@
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - netmix",
         "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 03 - netmix",
+        "🇧🇷 巴西 (Brazil) 04 - netmix"
       ]
     },
     {
@@ -57,7 +80,8 @@
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - netmix",
         "🇧🇷 巴西 (Brazil) 02 - netmix",
-        "🇧🇷 巴西 (Brazil) 03 - netmix"
+        "🇧🇷 巴西 (Brazil) 03 - netmix",
+        "🇧🇷 巴西 (Brazil) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

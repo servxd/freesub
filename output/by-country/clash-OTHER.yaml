@@ -5,138 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: 104.18.11.66
+  server: 172.66.140.62
   port: 443
   udp: true
   type: vless
-  uuid: 2874e26b-45e3-4d12-9e01-3f5a1c6a7105
+  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
   tls: true
-  servername: dietary-forms-begun-orientation.trycloudflare.com
+  servername: ave-qualifications-choices-populations.trycloudflare.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /d9fb7b4f14c1
+    path: /a8b8606819ef
     headers:
-      Host: dietary-forms-begun-orientation.trycloudflare.com
+      Host: ave-qualifications-choices-populations.trycloudflare.com
 - name: 🌐 其他地区 (Other) 02 - netmix
-  server: cf.0sm.com
-  port: 80
+  server: 188.114.99.137
+  port: 443
   udp: true
   type: vmess
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 03 - netmix
-  server: cf.0sm.com
-  port: 80
+  server: 188.114.99.137
+  port: 443
   udp: true
   type: vmess
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 04 - netmix
-  server: 188.114.96.3
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 05 - netmix
-  server: 188.114.96.3
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 06 - netmix
-  server: 188.114.96.3
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-- name: 🌐 其他地区 (Other) 07 - netmix
-  server: 188.114.96.3
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-- name: 🌐 其他地区 (Other) 08 - netmix
-  server: 188.114.96.3
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 09 - netmix
-  server: 188.114.96.3
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -145,12 +59,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - netmix
   - 🌐 其他地区 (Other) 02 - netmix
   - 🌐 其他地区 (Other) 03 - netmix
-  - 🌐 其他地区 (Other) 04 - netmix
-  - 🌐 其他地区 (Other) 05 - netmix
-  - 🌐 其他地区 (Other) 06 - netmix
-  - 🌐 其他地区 (Other) 07 - netmix
-  - 🌐 其他地区 (Other) 08 - netmix
-  - 🌐 其他地区 (Other) 09 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -159,11 +67,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - netmix
   - 🌐 其他地区 (Other) 02 - netmix
   - 🌐 其他地区 (Other) 03 - netmix
-  - 🌐 其他地区 (Other) 04 - netmix
-  - 🌐 其他地区 (Other) 05 - netmix
-  - 🌐 其他地区 (Other) 06 - netmix
-  - 🌐 其他地区 (Other) 07 - netmix
-  - 🌐 其他地区 (Other) 08 - netmix
-  - 🌐 其他地区 (Other) 09 - netmix
 rules:
 - MATCH,PROXIES

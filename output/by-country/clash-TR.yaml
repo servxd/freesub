@@ -5,15 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - netmix
-  server: 153.56.210.134
-  port: 34121
+  server: 206.1.103.22
+  port: 44364
   udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: Bz8UfpIg1mfq1NKzWJHCqMJKnir+XnFlmg66uhQwadg=:2uDsVU+xNw+1DgHOubNVu5OfnYH8VjSvft2LptD0tEE=
 - name: 🇹🇷 土耳其 (Turkey) 02 - netmix
   server: 153.56.210.134
   port: 38045
@@ -26,6 +23,16 @@ proxies:
   obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
 - name: 🇹🇷 土耳其 (Turkey) 03 - netmix
   server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
+  server: 153.56.210.134
   port: 57251
   udp: true
   type: hysteria2
@@ -34,8 +41,20 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
-  server: 45.141.148.46
+- name: 🇹🇷 土耳其 (Turkey) 05 - netmix
+  server: 77.83.245.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: tr1-r.bankai.party
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 06 - netmix
+  server: 45.141.148.48
   port: 443
   udp: true
   type: vless
@@ -44,7 +63,7 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
-  servername: tr1b.galioncc.com
+  servername: net-svc-mgr.galioncc.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -55,6 +74,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
   - 🇹🇷 土耳其 (Turkey) 03 - netmix
   - 🇹🇷 土耳其 (Turkey) 04 - netmix
+  - 🇹🇷 土耳其 (Turkey) 05 - netmix
+  - 🇹🇷 土耳其 (Turkey) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +85,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
   - 🇹🇷 土耳其 (Turkey) 03 - netmix
   - 🇹🇷 土耳其 (Turkey) 04 - netmix
+  - 🇹🇷 土耳其 (Turkey) 05 - netmix
+  - 🇹🇷 土耳其 (Turkey) 06 - netmix
 rules:
 - MATCH,PROXIES

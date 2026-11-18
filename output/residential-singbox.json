@@ -6,34 +6,38 @@
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - netmix",
-      "server": "8.220.81.25",
+      "server": "18.134.253.71",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+      "password": "Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4="
     },
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix",
       "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
+      "server_port": 21020,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-      "server": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 04 (移动家宽) - netmix",
+      "server": "47.85.162.44",
       "server_port": 443,
-      "password": "92bd8c68-6434-11ee-b644-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
-        "insecure": true
-      }
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA="
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix",
       "server": "59.125.69.23",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -52,23 +56,15 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 (移动家宽) - netmix",
-      "server": "8.211.38.49",
-      "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 (移动家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix",
-        "🇩🇪 德国 (Germany) 05 (移动家宽) - netmix"
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix",
+        "🇩🇪 德国 (Germany) 04 (移动家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix"
       ]
     },
     {
@@ -77,9 +73,9 @@
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 (移动家宽) - netmix",
         "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix",
-        "🇩🇪 德国 (Germany) 05 (移动家宽) - netmix"
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - netmix",
+        "🇩🇪 德国 (Germany) 04 (移动家宽) - netmix",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
