@@ -17,19 +17,20 @@ proxies:
   ws-opts:
     path: /vless/
 - name: 🇲🇽 墨西哥 (Mexico) 02 - netmix
-  server: 64.177.90.30
-  port: 8388
+  server: 45.134.9.133
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
-- name: 🇲🇽 墨西哥 (Mexico) 03 - netmix
-  server: 64.177.90.30
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
+  type: vless
+  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
+  tls: true
+  servername: ul-mexico1.09vpn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ul-mexico1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - netmix
   - 🇲🇽 墨西哥 (Mexico) 02 - netmix
-  - 🇲🇽 墨西哥 (Mexico) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - netmix
   - 🇲🇽 墨西哥 (Mexico) 02 - netmix
-  - 🇲🇽 墨西哥 (Mexico) 03 - netmix
 rules:
 - MATCH,PROXIES

@@ -11,14 +11,23 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  server: 49.254.204.133
-  port: 1774
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  server: dog-hk.kunlun01dns.com
+  port: 21019
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
   server: 59.125.69.23
   port: 443
   udp: true
@@ -31,7 +40,7 @@ proxies:
   network: ws
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-- name: 🇩🇪 德国 (Germany) 04 (移动家宽) - netmix
+- name: 🇩🇪 德国 (Germany) 05 (移动家宽) - netmix
   server: 8.211.38.49
   port: 443
   udp: true
@@ -44,17 +53,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  - 🇩🇪 德国 (Germany) 04 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇩🇪 德国 (Germany) 05 (移动家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - netmix
-  - 🇩🇪 德国 (Germany) 04 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇩🇪 德国 (Germany) 05 (移动家宽) - netmix
 rules:
 - MATCH,PROXIES
