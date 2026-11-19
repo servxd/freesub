@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
-  server: 91.217.10.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: api-ns-mgr.galioncc.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
   server: 185.246.155.91
   port: 10403
   udp: true
@@ -29,95 +17,21 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
   server: 3h-kazakhstan1.09vpn.com
-  port: 80
+  port: 8443
   udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /vless/
     headers:
       Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,13 +39,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -139,12 +46,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - netmix
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - netmix
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - netmix
 rules:
 - MATCH,PROXIES

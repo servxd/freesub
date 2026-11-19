@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "tls": {
+        "enabled": true,
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
       "server": "138.124.80.29",
       "server_port": 443,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -15,7 +27,7 @@
         "server_name": "fin1-r.bankai.party",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +38,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
       "server": "157.180.98.124",
       "server_port": 49659,
       "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
@@ -47,7 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -60,39 +72,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
-      "server": "198.202.24.142",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
-      "tls": {
-        "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
-      "tls": {
-        "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
-        "insecure": false
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
       "server": "fn1s.sublinkplas.ir",
       "server_port": 53731,
       "method": "chacha20-ietf-poly1305",
@@ -107,8 +88,7 @@
         "🇫🇮 芬兰 (Finland) 02 - netmix",
         "🇫🇮 芬兰 (Finland) 03 - netmix",
         "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix",
-        "🇫🇮 芬兰 (Finland) 06 - netmix"
+        "🇫🇮 芬兰 (Finland) 05 - netmix"
       ]
     },
     {
@@ -119,8 +99,7 @@
         "🇫🇮 芬兰 (Finland) 02 - netmix",
         "🇫🇮 芬兰 (Finland) 03 - netmix",
         "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix",
-        "🇫🇮 芬兰 (Finland) 06 - netmix"
+        "🇫🇮 芬兰 (Finland) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

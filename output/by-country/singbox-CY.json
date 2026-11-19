@@ -5,22 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇭 BH 01 - netmix",
-      "server": "bh1.vpnjantit.com",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix",
+      "server": "132.243.212.204",
       "server_port": 443,
-      "uuid": "b36a16e4-ded8-11f1-bdea-5254b0a2c347",
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cloudflare.com",
+        "server_name": "10w0wjw.virtual-network.lol",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lDEkUokSL-mrM1jsH8UKs8-3cfJMvkxhY7k37iBkFi4",
-          "short_id": "32b72239bc69220e"
         }
       }
     },
@@ -29,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇭 BH 01 - netmix"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇭 BH 01 - netmix"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

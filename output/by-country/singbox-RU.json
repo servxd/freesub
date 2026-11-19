@@ -67,37 +67,8 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - netmix",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - netmix",
-      "server": "193.233.199.94",
-      "server_port": 443,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fin4-r.bankai.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - netmix",
       "server": "193.233.199.30",
       "server_port": 443,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -107,7 +78,7 @@
         "server_name": "fin3-r.bankai.party",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -117,9 +88,17 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - netmix",
+      "server": "46.17.47.246",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - netmix",
-      "server": "201.51.12.98",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - netmix",
+      "server": "201.24.116.192",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
@@ -138,90 +117,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - netmix",
-      "server": "81.200.152.153",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gmbasdasd.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "t2iopaZn9-fADmIi4taXbGUV6wFTFku4eGi8KISuZAM",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - netmix",
-      "server": "147.45.175.81",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xssite.webredirect.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - netmix",
-      "server": "89.223.124.93",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dfgdfgb.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rLkjhzhSAJrey5Qv3624_5B-MpViafV2dDdDCnqn_l4",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - netmix",
-      "server": "94.228.123.26",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ghjgdfgdfghjmb.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cYVz2YZI-PELLGGm38rrGcipPvnWcSMswOh4j536bmg",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 12 - netmix",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - netmix",
       "server": "201.24.121.243",
       "server_port": 443,
       "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
@@ -243,12 +139,50 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 13 - netmix",
-      "server": "46.17.47.194",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - netmix",
+      "server": "xssite.webredirect.org",
+      "server_port": 443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "xssite.webredirect.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-ru"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - netmix",
+      "server": "harbor.gerqix.online",
+      "server_port": 443,
+      "uuid": "25ac78e7-6d1d-4c9a-a450-c01a4871769f",
+      "tls": {
+        "enabled": true,
+        "server_name": "harbor.gerqix.online",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/de1/stream",
+        "headers": {
+          "Host": "harbor.gerqix.online"
+        }
+      }
     },
     {
       "type": "selector",
@@ -263,11 +197,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - netmix",
         "🇷🇺 俄罗斯 (Russia) 07 - netmix",
         "🇷🇺 俄罗斯 (Russia) 08 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 09 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 10 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 11 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 12 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 13 - netmix"
+        "🇷🇺 俄罗斯 (Russia) 09 - netmix"
       ]
     },
     {
@@ -282,11 +212,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - netmix",
         "🇷🇺 俄罗斯 (Russia) 07 - netmix",
         "🇷🇺 俄罗斯 (Russia) 08 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 09 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 10 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 11 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 12 - netmix",
-        "🇷🇺 俄罗斯 (Russia) 13 - netmix"
+        "🇷🇺 俄罗斯 (Russia) 09 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
