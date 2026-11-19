@@ -5,22 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - netmix
-  server: 206.1.103.22
-  port: 44364
+  server: 87.76.154.28
+  port: 57231
   udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: Bz8UfpIg1mfq1NKzWJHCqMJKnir+XnFlmg66uhQwadg=:2uDsVU+xNw+1DgHOubNVu5OfnYH8VjSvft2LptD0tEE=
+  type: vless
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 - name: 🇹🇷 土耳其 (Turkey) 02 - netmix
   server: 153.56.210.134
-  port: 38045
+  port: 57251
   udp: true
   type: hysteria2
-  password: a81a7b45-dd70-42ef-822f-ef467f944382
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
   sni: www.bing.com
   skip-cert-verify: true
   obfs: salamander
-  obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
 - name: 🇹🇷 土耳其 (Turkey) 03 - netmix
   server: 153.56.210.134
   port: 34121
@@ -33,14 +32,14 @@ proxies:
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
 - name: 🇹🇷 土耳其 (Turkey) 04 - netmix
   server: 153.56.210.134
-  port: 57251
+  port: 38045
   udp: true
   type: hysteria2
-  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  password: a81a7b45-dd70-42ef-822f-ef467f944382
   sni: www.bing.com
   skip-cert-verify: true
   obfs: salamander
-  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+  obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
 - name: 🇹🇷 土耳其 (Turkey) 05 - netmix
   server: 77.83.245.79
   port: 443
@@ -51,9 +50,30 @@ proxies:
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
   servername: tr1-r.bankai.party
-  client-fingerprint: qq
+  client-fingerprint: ''
 - name: 🇹🇷 土耳其 (Turkey) 06 - netmix
+  server: tr.subscriptionservice.ir
+  port: 2089
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+- name: 🇹🇷 土耳其 (Turkey) 07 - netmix
+  server: 185.246.155.91
+  port: 10103
+  udp: true
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
+    short-id: 6859f5b59e55aa30
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 - netmix
   server: 45.141.148.48
   port: 443
   udp: true
@@ -76,6 +96,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - netmix
   - 🇹🇷 土耳其 (Turkey) 05 - netmix
   - 🇹🇷 土耳其 (Turkey) 06 - netmix
+  - 🇹🇷 土耳其 (Turkey) 07 - netmix
+  - 🇹🇷 土耳其 (Turkey) 08 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +109,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - netmix
   - 🇹🇷 土耳其 (Turkey) 05 - netmix
   - 🇹🇷 土耳其 (Turkey) 06 - netmix
+  - 🇹🇷 土耳其 (Turkey) 07 - netmix
+  - 🇹🇷 土耳其 (Turkey) 08 - netmix
 rules:
 - MATCH,PROXIES

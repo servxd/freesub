@@ -16,14 +16,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇧🇷 巴西 (Brazil) 02 - netmix
-  server: 216.238.104.154
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 216.238.104.154
-  skip-cert-verify: true
-- name: 🇧🇷 巴西 (Brazil) 03 - netmix
   server: 137.131.177.121
   port: 20000
   udp: true
@@ -34,7 +26,7 @@ proxies:
   obfs: salamander
   obfs-password: z/yIxn3sBV03PkAxbnX8rg==
   ports: 20000-30000
-- name: 🇧🇷 巴西 (Brazil) 04 - netmix
+- name: 🇧🇷 巴西 (Brazil) 03 - netmix
   server: 103.14.27.207
   port: 1270
   udp: true
@@ -53,7 +45,6 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - netmix
   - 🇧🇷 巴西 (Brazil) 02 - netmix
   - 🇧🇷 巴西 (Brazil) 03 - netmix
-  - 🇧🇷 巴西 (Brazil) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +53,5 @@ proxy-groups:
   - 🇧🇷 巴西 (Brazil) 01 - netmix
   - 🇧🇷 巴西 (Brazil) 02 - netmix
   - 🇧🇷 巴西 (Brazil) 03 - netmix
-  - 🇧🇷 巴西 (Brazil) 04 - netmix
 rules:
 - MATCH,PROXIES

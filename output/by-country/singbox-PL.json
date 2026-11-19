@@ -7,13 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - netmix",
       "server": "217.30.10.44",
+      "server_port": 9071,
+      "method": "aes-256-cfb",
+      "password": "mENfxTFQpRKKh4As"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 02 - netmix",
+      "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
       "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - netmix",
+      "tag": "🇵🇱 波兰 (Poland) 03 - netmix",
       "server": "217.30.10.44",
       "server_port": 9063,
       "method": "aes-256-cfb",
@@ -21,19 +29,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - netmix",
-      "server": "217.30.10.44",
-      "server_port": 9076,
-      "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 04 - netmix",
       "server": "217.30.10.70",
-      "server_port": 9020,
+      "server_port": 9040,
       "method": "aes-256-cfb",
-      "password": "BNmAXXxAHYpTRdzu"
+      "password": "p9z5BVADH2YFs3MN"
     },
     {
       "type": "shadowsocks",
@@ -47,37 +47,21 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 06 - netmix",
       "server": "217.30.10.44",
+      "server_port": 9076,
+      "method": "aes-256-cfb",
+      "password": "S2zDyyPcmZN2h8EC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 07 - netmix",
+      "server": "217.30.10.44",
       "server_port": 9042,
       "method": "aes-256-cfb",
       "password": "S7KwUu7yBy58S3Ga"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 - netmix",
-      "server": "217.30.10.70",
-      "server_port": 9040,
-      "method": "aes-256-cfb",
-      "password": "p9z5BVADH2YFs3MN"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 08 - netmix",
-      "server": "217.30.10.44",
-      "server_port": 9062,
-      "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 09 - netmix",
-      "server": "217.30.10.44",
-      "server_port": 9006,
-      "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 10 - netmix",
       "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",
@@ -85,15 +69,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 11 - netmix",
+      "tag": "🇵🇱 波兰 (Poland) 09 - netmix",
       "server": "217.30.10.70",
-      "server_port": 9098,
+      "server_port": 9005,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "ZET59LF6DvCC8KVt"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 12 - netmix",
+      "tag": "🇵🇱 波兰 (Poland) 10 - netmix",
       "server": "45.194.66.177",
       "server_port": 443,
       "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
@@ -110,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 13 - netmix",
+      "tag": "🇵🇱 波兰 (Poland) 11 - netmix",
       "server": "80.47.10.106",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -130,7 +114,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 14 - netmix",
+      "tag": "🇵🇱 波兰 (Poland) 12 - netmix",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
@@ -145,7 +129,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 15 - netmix",
+      "tag": "🇵🇱 波兰 (Poland) 13 - netmix",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -155,7 +139,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -181,9 +165,7 @@
         "🇵🇱 波兰 (Poland) 10 - netmix",
         "🇵🇱 波兰 (Poland) 11 - netmix",
         "🇵🇱 波兰 (Poland) 12 - netmix",
-        "🇵🇱 波兰 (Poland) 13 - netmix",
-        "🇵🇱 波兰 (Poland) 14 - netmix",
-        "🇵🇱 波兰 (Poland) 15 - netmix"
+        "🇵🇱 波兰 (Poland) 13 - netmix"
       ]
     },
     {
@@ -202,9 +184,7 @@
         "🇵🇱 波兰 (Poland) 10 - netmix",
         "🇵🇱 波兰 (Poland) 11 - netmix",
         "🇵🇱 波兰 (Poland) 12 - netmix",
-        "🇵🇱 波兰 (Poland) 13 - netmix",
-        "🇵🇱 波兰 (Poland) 14 - netmix",
-        "🇵🇱 波兰 (Poland) 15 - netmix"
+        "🇵🇱 波兰 (Poland) 13 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
