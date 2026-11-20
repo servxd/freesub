@@ -12,66 +12,18 @@
       "password": "pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr"
     },
     {
-      "type": "vless",
-      "tag": "🇦🇱 AL 02 - netmix",
-      "server": "94.183.234.245",
-      "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇱 AL 03 - netmix",
-      "server": "185.207.198.151",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-e56923ade28f",
-      "tls": {
-        "enabled": true,
-        "server_name": "6izgogewuq8s.5czjqeeeua8s.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/e56923ade28f/loc-1",
-        "headers": {
-          "Host": "6izgogewuq8s.5czjqeeeua8s.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - netmix",
-        "🇦🇱 AL 02 - netmix",
-        "🇦🇱 AL 03 - netmix"
+        "🇦🇱 AL 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - netmix",
-        "🇦🇱 AL 02 - netmix",
-        "🇦🇱 AL 03 - netmix"
+        "🇦🇱 AL 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

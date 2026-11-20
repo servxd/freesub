@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇳🇴 挪威 (Norway) 01 - netmix",
-      "server": "168.113.254.247",
-      "server_port": 443,
-      "password": "b006650f-8771-0001-b7fa-e18fc6e80ef1",
-      "tls": {
-        "enabled": true,
-        "server_name": "vcerx-ru-67sb.my-fade.cloud",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 02 - netmix",
+      "tag": "🇳🇴 挪威 (Norway) 01 - netmix",
       "server": "185.213.23.63",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
@@ -28,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - netmix",
-        "🇳🇴 挪威 (Norway) 02 - netmix"
+        "🇳🇴 挪威 (Norway) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - netmix",
-        "🇳🇴 挪威 (Norway) 02 - netmix"
+        "🇳🇴 挪威 (Norway) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

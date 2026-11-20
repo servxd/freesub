@@ -32,8 +32,22 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - netmix",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - netmix",
       "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -42,17 +56,6 @@
         "enabled": true,
         "server_name": "xmfhlpy.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - netmix",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
       }
     },
     {
@@ -76,25 +79,89 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - netmix",
-      "server": "81.90.21.163",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - netmix",
+      "server": "95.143.196.97",
+      "server_port": 443,
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.mimowhat.online",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - netmix",
+      "server": "2.27.14.247",
       "server_port": 2096,
       "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
       "tls": {
         "enabled": true,
-        "server_name": "stb71e5.rumedia-cdn.com",
+        "server_name": "st2a695.rumedia-cdn.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
         "path": "/cdn/v3/live",
         "headers": {
-          "Host": "stb71e5.rumedia-cdn.com"
+          "Host": "st2a695.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - netmix",
+      "server": "81.90.21.163",
+      "server_port": 2053,
+      "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "81.90.21.163",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - netmix",
+      "server": "subgift.gcorecdn.com",
+      "server_port": 443,
+      "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "subgift.gcorecdn.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/t.me-SubGift",
+        "headers": {
+          "Host": "subgift.gcorecdn.com"
         }
       }
     },
@@ -108,7 +175,11 @@
         "🇸🇪 瑞典 (Sweden) 03 - netmix",
         "🇸🇪 瑞典 (Sweden) 04 - netmix",
         "🇸🇪 瑞典 (Sweden) 05 - netmix",
-        "🇸🇪 瑞典 (Sweden) 06 - netmix"
+        "🇸🇪 瑞典 (Sweden) 06 - netmix",
+        "🇸🇪 瑞典 (Sweden) 07 - netmix",
+        "🇸🇪 瑞典 (Sweden) 08 - netmix",
+        "🇸🇪 瑞典 (Sweden) 09 - netmix",
+        "🇸🇪 瑞典 (Sweden) 10 - netmix"
       ]
     },
     {
@@ -120,7 +191,11 @@
         "🇸🇪 瑞典 (Sweden) 03 - netmix",
         "🇸🇪 瑞典 (Sweden) 04 - netmix",
         "🇸🇪 瑞典 (Sweden) 05 - netmix",
-        "🇸🇪 瑞典 (Sweden) 06 - netmix"
+        "🇸🇪 瑞典 (Sweden) 06 - netmix",
+        "🇸🇪 瑞典 (Sweden) 07 - netmix",
+        "🇸🇪 瑞典 (Sweden) 08 - netmix",
+        "🇸🇪 瑞典 (Sweden) 09 - netmix",
+        "🇸🇪 瑞典 (Sweden) 10 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
