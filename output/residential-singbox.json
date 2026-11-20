@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21022,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - netmix",
+      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) - netmix",
       "server": "47.85.162.44",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -21,7 +13,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 03 (移动家宽) - netmix",
+      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽) - netmix",
       "server": "8.220.81.25",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -29,63 +21,29 @@
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16112,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21022,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - netmix",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix",
-      "server": "59.125.69.23",
-      "server_port": 443,
-      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530"
-      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - netmix",
         "🇩🇪 德国 (Germany) 02 (移动家宽) - netmix",
-        "🇩🇪 德国 (Germany) 03 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix",
+        "🇩🇪 德国 (Germany) 01 (移动家宽) - netmix",
         "🇩🇪 德国 (Germany) 02 (移动家宽) - netmix",
-        "🇩🇪 德国 (Germany) 03 (移动家宽) - netmix",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - netmix",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix"
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

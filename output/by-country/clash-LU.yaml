@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
-  server: staticxfastline.taymaztest.ir
+  server: 193.57.88.100
   port: 16200
   udp: true
   type: trojan
@@ -15,17 +15,68 @@ proxies:
   network: ws
   ws-opts:
     path: /biyasd
+- name: 🇱🇺 卢森堡 (Luxembourg) 02 - netmix
+  server: 92.223.84.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  tls: true
+  servername: subgift.gcorecdn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇱🇺 卢森堡 (Luxembourg) 03 - netmix
+  server: 92.223.84.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  tls: true
+  servername: subgift.gcorecdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇱🇺 卢森堡 (Luxembourg) 04 - netmix
+  server: 92.223.84.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  tls: true
+  servername: subgift.gcorecdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 02 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 卢森堡 (Luxembourg) 01 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 02 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - netmix
+  - 🇱🇺 卢森堡 (Luxembourg) 04 - netmix
 rules:
 - MATCH,PROXIES

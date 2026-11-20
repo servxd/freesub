@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇱 AL 01 - netmix
+  server: dns22.m3hrzd.ir
+  port: 1348
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
+- name: 🇦🇱 AL 02 - netmix
+  server: 94.183.234.245
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇦🇱 AL 03 - netmix
+  server: 185.207.198.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-e56923ade28f
+  tls: true
+  servername: 6izgogewuq8s.5czjqeeeua8s.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/e56923ade28f/loc-1
+    headers:
+      Host: 6izgogewuq8s.5czjqeeeua8s.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇱 AL 01 - netmix
+  - 🇦🇱 AL 02 - netmix
+  - 🇦🇱 AL 03 - netmix
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇱 AL 01 - netmix
+  - 🇦🇱 AL 02 - netmix
+  - 🇦🇱 AL 03 - netmix
+rules:
+- MATCH,PROXIES
