@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  server: 3.8.210.56
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
   server: 47.254.175.2
   port: 443
   udp: true
@@ -24,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
 rules:
 - MATCH,PROXIES
