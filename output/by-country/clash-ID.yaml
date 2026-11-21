@@ -4,12 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - netmix
-  server: 119.46.51.45
-  port: 37515
+- name: 🇮🇩 印尼 (Indonesia) 01 - netmix
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16298
   udp: true
   type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 01 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 01 - netmix
 rules:
 - MATCH,PROXIES

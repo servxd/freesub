@@ -5,49 +5,72 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: 104.18.42.98
+  server: 104.21.94.203
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
-  servername: jp3.yohototo.top
+  servername: fr-free.fastestrelay.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /700gvl
     headers:
-      Host: jp3.yohototo.top
+      Host: fr-free.fastestrelay.com
 - name: 🌐 其他地区 (Other) 02 - netmix
-  server: 104.18.42.98
-  port: 443
+  server: 104.21.7.133
+  port: 80
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers:
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 03 - netmix
-  server: 104.18.42.98
-  port: 443
+  server: 104.21.7.133
+  port: 80
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws?ed=2048
     headers:
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 04 - netmix
+  server: 104.21.7.133
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 05 - netmix
+  server: 104.21.7.133
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +79,8 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - netmix
   - 🌐 其他地区 (Other) 02 - netmix
   - 🌐 其他地区 (Other) 03 - netmix
+  - 🌐 其他地区 (Other) 04 - netmix
+  - 🌐 其他地区 (Other) 05 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +89,7 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - netmix
   - 🌐 其他地区 (Other) 02 - netmix
   - 🌐 其他地区 (Other) 03 - netmix
+  - 🌐 其他地区 (Other) 04 - netmix
+  - 🌐 其他地区 (Other) 05 - netmix
 rules:
 - MATCH,PROXIES
