@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - netmix
-  server: 151.241.19.36
+  server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - netmix
-  server: 151.241.19.29
+  server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
@@ -32,16 +32,55 @@ proxies:
   servername: nl-edge.airlinesvpn.com
   client-fingerprint: ''
 - name: 🇦🇪 阿联酋 (UAE) 04 - netmix
-  server: 84.235.244.108
-  port: 22573
+  server: 212.192.3.113
+  port: 9543
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05 - netmix
+  server: 212.192.3.63
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - netmix
+  server: 212.192.3.237
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 07 - netmix
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: uae.unixzone.us
+      Host: 95.174.68.188
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +90,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
+  - 🇦🇪 阿联酋 (UAE) 05 - netmix
+  - 🇦🇪 阿联酋 (UAE) 06 - netmix
+  - 🇦🇪 阿联酋 (UAE) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +102,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - netmix
   - 🇦🇪 阿联酋 (UAE) 03 - netmix
   - 🇦🇪 阿联酋 (UAE) 04 - netmix
+  - 🇦🇪 阿联酋 (UAE) 05 - netmix
+  - 🇦🇪 阿联酋 (UAE) 06 - netmix
+  - 🇦🇪 阿联酋 (UAE) 07 - netmix
 rules:
 - MATCH,PROXIES

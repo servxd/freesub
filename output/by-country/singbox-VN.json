@@ -4,29 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 01 - netmix",
-      "server": "39.108.113.127",
-      "server_port": 10086,
-      "uuid": "a625d148-e988-4008-b957-e9051a6371d2",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - netmix",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - netmix"
+        "🇻🇳 越南 (Vietnam) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - netmix"
+        "🇻🇳 越南 (Vietnam) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
