@@ -25,41 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
-      "server": "45.140.204.17",
-      "server_port": 22444,
-      "uuid": "a9ff24d3-f308-4e72-acb9-a76062583837",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fontanka.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "T1BWBw3lq9G1LiQ7eQSPfdNQic7bUMEbdFNJBewAwB8",
-          "short_id": "6ad3c0f1e9b2478a"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - netmix",
-        "🇮🇱 以色列 (Israel) 02 - netmix"
+        "🇮🇱 以色列 (Israel) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - netmix",
-        "🇮🇱 以色列 (Israel) 02 - netmix"
+        "🇮🇱 以色列 (Israel) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,18 +6,6 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -28,9 +16,21 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "103.115.109.49",
+        "insecure": true
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-      "server": "afzuv.xiaoyan.io",
+      "server": "dp8yk.xiaoyan.io",
       "server_port": 16616,
       "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
       "security": "auto",
@@ -45,7 +45,7 @@
     {
       "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 - netmix",
-      "server": "dp8yk.xiaoyan.io",
+      "server": "afzuv.xiaoyan.io",
       "server_port": 16616,
       "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
       "security": "auto",

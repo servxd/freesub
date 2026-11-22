@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - netmix
+  server: 188.225.36.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  tls: true
+  servername: olvento.space
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: olvento.sync.v1
+- name: 🇹🇷 土耳其 (Turkey) 02 - netmix
   server: 185.246.155.91
   port: 10103
   udp: true
@@ -17,19 +30,19 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - netmix
-  server: cadrin.wtf
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 03 - netmix
+  server: 194.135.34.118
+  port: 8443
   udp: true
   type: vless
-  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
+  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
   tls: true
-  servername: cadrin.wtf
+  servername: web.hosttcp.fun
   skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cache.sync.v1
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v4/media/session
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
+  - 🇹🇷 土耳其 (Turkey) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
+  - 🇹🇷 土耳其 (Turkey) 03 - netmix
 rules:
 - MATCH,PROXIES

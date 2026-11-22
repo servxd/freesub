@@ -41,50 +41,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - netmix",
-      "server": "212.192.3.113",
-      "server_port": 9543,
-      "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
-      "flow": "xtls-rprx-vision",
+      "server": "dg4.ianai.it.com",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "tls": {
         "enabled": true,
-        "server_name": "storage.yandexcloud.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcdf"
-        }
+        "server_name": "dg4.ianai.it.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - netmix",
-      "server": "212.192.3.63",
-      "server_port": 9543,
-      "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "storage.yandexcloud.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcdf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - netmix",
       "server": "212.192.3.237",
       "server_port": 9543,
       "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
@@ -105,16 +75,12 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - netmix",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - netmix",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+        "type": "ws"
       }
     },
     {
@@ -127,8 +93,7 @@
         "🇦🇪 阿联酋 (UAE) 03 - netmix",
         "🇦🇪 阿联酋 (UAE) 04 - netmix",
         "🇦🇪 阿联酋 (UAE) 05 - netmix",
-        "🇦🇪 阿联酋 (UAE) 06 - netmix",
-        "🇦🇪 阿联酋 (UAE) 07 - netmix"
+        "🇦🇪 阿联酋 (UAE) 06 - netmix"
       ]
     },
     {
@@ -140,8 +105,7 @@
         "🇦🇪 阿联酋 (UAE) 03 - netmix",
         "🇦🇪 阿联酋 (UAE) 04 - netmix",
         "🇦🇪 阿联酋 (UAE) 05 - netmix",
-        "🇦🇪 阿联酋 (UAE) 06 - netmix",
-        "🇦🇪 阿联酋 (UAE) 07 - netmix"
+        "🇦🇪 阿联酋 (UAE) 06 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
