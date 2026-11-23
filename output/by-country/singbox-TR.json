@@ -15,7 +15,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -26,9 +26,35 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - netmix",
-      "server": "185.246.155.91",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
+      "tls": {
+        "enabled": true,
+        "server_name": "sinavm3.soft10.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm3.soft10.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - netmix",
+      "server": "37.221.76.116",
+      "server_port": 2088,
+      "uuid": "74821d64-581c-4461-b92d-d61827ab7452",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -39,29 +65,30 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
-          "short_id": "6859f5b59e55aa30"
+          "public_key": "bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo",
+          "short_id": "66d62ef550107695"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - netmix",
-      "server": "194.135.34.118",
-      "server_port": 8443,
-      "uuid": "020f7f86-a559-4366-8d2d-c6f81d6bbe5f",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - netmix",
+      "server": "147.45.66.208",
+      "server_port": 43000,
+      "uuid": "01e61db7-9e0b-4431-a995-a5288a01b951",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.hosttcp.fun",
-        "insecure": false,
+        "server_name": "147.45.66.208",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg",
+          "short_id": "4d3d8e15"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v4/media/session"
       }
     },
     {
@@ -71,7 +98,8 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
         "🇹🇷 土耳其 (Turkey) 02 - netmix",
-        "🇹🇷 土耳其 (Turkey) 03 - netmix"
+        "🇹🇷 土耳其 (Turkey) 03 - netmix",
+        "🇹🇷 土耳其 (Turkey) 04 - netmix"
       ]
     },
     {
@@ -80,7 +108,8 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
         "🇹🇷 土耳其 (Turkey) 02 - netmix",
-        "🇹🇷 土耳其 (Turkey) 03 - netmix"
+        "🇹🇷 土耳其 (Turkey) 03 - netmix",
+        "🇹🇷 土耳其 (Turkey) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

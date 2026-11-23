@@ -13,39 +13,72 @@ proxies:
   password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - netmix
   server: 195.238.126.20
-  port: 9011
+  port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - netmix
   server: 195.238.126.20
-  port: 9002
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - netmix
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - netmix
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - netmix
   server: 195.238.126.20
   port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - netmix
+  server: 195.238.126.84
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - netmix
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - netmix
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - netmix
+  server: 195.238.126.20
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - netmix
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 10 - netmix
+  server: lt-tcp.h1.vpnprime.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c462694-93fe-4b43-a3a1-bc458d65de82
+  tls: true
+  reality-opts:
+    public-key: QZsbrRTzJ-nze9D4BJxREqxDBExpyszYpdkK9qO8Jls
+    short-id: d50682df18259eac
+  servername: a96401t.lt4.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +90,10 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 05 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 06 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 07 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 08 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 09 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 10 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +105,9 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 05 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 06 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 07 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 08 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 09 - netmix
+  - 🇱🇹 立陶宛 (Lithuania) 10 - netmix
 rules:
 - MATCH,PROXIES

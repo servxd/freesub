@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - netmix",
       "server": "213.183.63.60",
-      "server_port": 9049,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - netmix",
-      "server": "213.183.63.60",
-      "server_port": 9061,
-      "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - netmix",
       "server": "213.183.63.60",
       "server_port": 9066,
       "method": "aes-256-cfb",
@@ -29,7 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - netmix",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - netmix",
       "server": "213.183.63.60",
       "server_port": 9029,
       "method": "aes-256-cfb",
@@ -37,7 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - netmix",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - netmix",
       "server": "213.183.63.60",
       "server_port": 9054,
       "method": "aes-256-cfb",
@@ -45,15 +37,31 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - netmix",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - netmix",
       "server": "213.183.63.60",
-      "server_port": 9064,
+      "server_port": 9028,
       "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "password": "9eeJ2fwnZA5Fxgz8"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - netmix",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - netmix",
       "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
@@ -61,7 +69,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - netmix",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - netmix",
       "server": "87.121.112.83",
       "server_port": 443,
       "password": "9a9f167d-b461-466f-be50-f0ffd598a6f8",
@@ -83,7 +91,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 06 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 07 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - netmix"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - netmix",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - netmix"
       ]
     },
     {
@@ -97,7 +106,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 06 - netmix",
         "🇧🇬 保加利亚 (Bulgaria) 07 - netmix",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - netmix"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - netmix",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

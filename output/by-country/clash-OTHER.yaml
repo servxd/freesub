@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: 104.27.0.1
+  server: cf.877771.xyz
   port: 443
   udp: true
   type: vmess
@@ -21,7 +21,37 @@ proxies:
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 02 - netmix
-  server: 104.27.0.1
+  server: cf.877771.xyz
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 03 - netmix
+  server: cf.877771.xyz
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🌐 其他地区 (Other) 04 - netmix
+  server: cf.877771.xyz
   port: 443
   udp: true
   type: vmess
@@ -36,8 +66,8 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 03 - netmix
-  server: 104.27.0.1
+- name: 🌐 其他地区 (Other) 05 - netmix
+  server: cf.877771.xyz
   port: 443
   udp: true
   type: vmess
@@ -50,6 +80,20 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
+- name: 🌐 其他地区 (Other) 06 - netmix
+  server: cf.877771.xyz
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
 proxy-groups:
@@ -60,6 +104,9 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - netmix
   - 🌐 其他地区 (Other) 02 - netmix
   - 🌐 其他地区 (Other) 03 - netmix
+  - 🌐 其他地区 (Other) 04 - netmix
+  - 🌐 其他地区 (Other) 05 - netmix
+  - 🌐 其他地区 (Other) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +115,8 @@ proxy-groups:
   - 🌐 其他地区 (Other) 01 - netmix
   - 🌐 其他地区 (Other) 02 - netmix
   - 🌐 其他地区 (Other) 03 - netmix
+  - 🌐 其他地区 (Other) 04 - netmix
+  - 🌐 其他地区 (Other) 05 - netmix
+  - 🌐 其他地区 (Other) 06 - netmix
 rules:
 - MATCH,PROXIES
