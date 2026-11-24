@@ -18,11 +18,11 @@ proxies:
   grpc-opts:
     grpc-service-name: olvento.sync.v1
 - name: 🇹🇷 土耳其 (Turkey) 02 - netmix
-  server: chatgpt.com
+  server: 172.64.155.209
   port: 443
   udp: true
   type: vless
-  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
   tls: true
   servername: sinavm3.soft10.ir
   skip-cert-verify: false
@@ -33,19 +33,6 @@ proxies:
     headers:
       Host: sinavm3.soft10.ir
 - name: 🇹🇷 土耳其 (Turkey) 03 - netmix
-  server: 37.221.76.116
-  port: 2088
-  udp: true
-  type: vless
-  uuid: 74821d64-581c-4461-b92d-d61827ab7452
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo
-    short-id: 66d62ef550107695
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - netmix
   server: 147.45.66.208
   port: 43000
   udp: true
@@ -66,7 +53,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
   - 🇹🇷 土耳其 (Turkey) 03 - netmix
-  - 🇹🇷 土耳其 (Turkey) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +61,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
   - 🇹🇷 土耳其 (Turkey) 03 - netmix
-  - 🇹🇷 土耳其 (Turkey) 04 - netmix
 rules:
 - MATCH,PROXIES

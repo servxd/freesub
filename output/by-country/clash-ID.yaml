@@ -5,6 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - netmix
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
+  tls: true
+  servername: investor.fb.com.r3xxe.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: investor.fb.com.r3xxe.eu.cc
+- name: 🇮🇩 印尼 (Indonesia) 02 - netmix
+  server: kozel.cc.cd
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
+  tls: true
+  servername: kozel.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /118.151.222.66=17317
+    headers:
+      Host: kozel.cc.cd
+- name: 🇮🇩 印尼 (Indonesia) 03 - netmix
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16298
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇮🇩 印尼 (Indonesia) 04 - netmix
   server: i1tr.mateflora.com
   port: 443
   udp: true
@@ -18,11 +56,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 02 - netmix
+  - 🇮🇩 印尼 (Indonesia) 03 - netmix
+  - 🇮🇩 印尼 (Indonesia) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - netmix
+  - 🇮🇩 印尼 (Indonesia) 02 - netmix
+  - 🇮🇩 印尼 (Indonesia) 03 - netmix
+  - 🇮🇩 印尼 (Indonesia) 04 - netmix
 rules:
 - MATCH,PROXIES

@@ -11,21 +11,9 @@
       "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
-      "type": "trojan",
-      "tag": "🇻🇳 越南 (Vietnam) 02 - netmix",
-      "server": "xvxn1hkzf.mateflora.com",
-      "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "tls": {
-        "enabled": true,
-        "server_name": "xvxn1hkzf.mateflora.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 03 - netmix",
-      "server": "Kir3.crackerbinam.org",
+      "tag": "🇻🇳 越南 (Vietnam) 02 - netmix",
+      "server": "kir3.crackerbinam.org",
       "server_port": 56026,
       "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
       "tls": {
@@ -40,6 +28,18 @@
           "public_key": "gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls",
           "short_id": "99676967e6867063"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇻🇳 越南 (Vietnam) 03 - netmix",
+      "server": "43.255.157.222",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "xvxn1hkzf.mateflora.com",
+        "insecure": true
       }
     },
     {

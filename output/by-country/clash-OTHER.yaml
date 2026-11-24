@@ -5,118 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: cf.877771.xyz
+  server: fr-free.fastestrelay.com
   port: 443
   udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 43BCAE0A-10A6-4003-8615-BD510F4215BA
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: fr-free.fastestrelay.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /700gvl-us-free
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 02 - netmix
-  server: cf.877771.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 03 - netmix
-  server: cf.877771.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-- name: 🌐 其他地区 (Other) 04 - netmix
-  server: cf.877771.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 05 - netmix
-  server: cf.877771.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-- name: 🌐 其他地区 (Other) 06 - netmix
-  server: cf.877771.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: fr-free.fastestrelay.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - netmix
-  - 🌐 其他地区 (Other) 02 - netmix
-  - 🌐 其他地区 (Other) 03 - netmix
-  - 🌐 其他地区 (Other) 04 - netmix
-  - 🌐 其他地区 (Other) 05 - netmix
-  - 🌐 其他地区 (Other) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - netmix
-  - 🌐 其他地区 (Other) 02 - netmix
-  - 🌐 其他地区 (Other) 03 - netmix
-  - 🌐 其他地区 (Other) 04 - netmix
-  - 🌐 其他地区 (Other) 05 - netmix
-  - 🌐 其他地区 (Other) 06 - netmix
 rules:
 - MATCH,PROXIES

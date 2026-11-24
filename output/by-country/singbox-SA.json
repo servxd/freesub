@@ -5,23 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - netmix",
-      "server": "156.146.40.84",
-      "server_port": 8443,
-      "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - netmix",
+      "server": "81.208.170.142",
+      "server_port": 1500,
+      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.ebay.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU",
-          "short_id": "f8d0271b4b5f9efc"
+          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+          "short_id": "775eb6408888248e"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - netmix"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - netmix"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

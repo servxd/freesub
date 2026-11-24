@@ -25,18 +25,28 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇬🇷 希腊 (Greece) 02 - netmix",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16310,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - netmix"
+        "🇬🇷 希腊 (Greece) 01 - netmix",
+        "🇬🇷 希腊 (Greece) 02 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - netmix"
+        "🇬🇷 希腊 (Greece) 01 - netmix",
+        "🇬🇷 希腊 (Greece) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

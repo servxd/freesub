@@ -5,47 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - netmix
-  server: 128.199.172.224
-  port: 8080
+  server: 104.17.3.81
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  tls: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 02 - netmix
-  server: 68.183.235.240
+  server: russia.com
+  port: 443
+  udp: true
+  type: trojan
+  password: bpb-trojan
+  sni: kargar001.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr?ed=2560
+- name: 🇸🇬 新加坡 (Singapore) 03 - netmix
+  server: 104.21.70.21
   port: 8080
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 03 - netmix
-  server: 129.150.59.74
-  port: 14384
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 04 - netmix
+  server: 104.17.147.208
+  port: 443
+  udp: true
+  type: vless
+  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
+  tls: true
+  servername: b.rack.sxsc.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: b.rack.sxsc.dpdns.org
+- name: 🇸🇬 新加坡 (Singapore) 05 - netmix
+  server: help1.digikala-aparat-zula.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20e565e1-3858-40bf-94e8-4ec9624fc985
+  tls: true
+  servername: wallweb8.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb8.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 06 - netmix
   server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 05 - netmix
-  server: 168.138.177.98
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY=
-- name: 🇸🇬 新加坡 (Singapore) 06 - netmix
-  server: 15.235.164.133
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 07 - netmix
   server: 149.88.106.74
   port: 19999
@@ -54,6 +86,63 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 08 - netmix
+  server: 15.235.164.133
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 09 - netmix
+  server: 149.88.107.47
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 10 - netmix
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 11 - netmix
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 12 - netmix
+  server: 68.183.235.240
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 13 - netmix
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 14 - netmix
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 15 - netmix
+  server: 149.88.107.74
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 16 - netmix
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -61,98 +150,77 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 09 - netmix
-  server: 149.88.107.74
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 10 - netmix
-  server: 149.88.107.47
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 11 - netmix
-  server: 149.88.106.73
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 12 - netmix
-  server: 15.235.182.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 13 - netmix
-  server: 138.2.89.249
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d042d150716709bb778cc73889cddb02
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-- name: 🇸🇬 新加坡 (Singapore) 14 - netmix
-  server: 13.212.78.215
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - netmix
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 16 - netmix
-  server: 43.160.213.146
-  port: 8388
+- name: 🇸🇬 新加坡 (Singapore) 17 - netmix
+  server: 129.150.59.74
+  port: 14384
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
-  password: ClzJLvRzIxivCXbf5X5jnSU0pLg5ffCEUL2AZoeLg94=
-- name: 🇸🇬 新加坡 (Singapore) 17 - netmix
-  server: 86.38.247.109
-  port: 2087
-  udp: true
-  type: trojan
-  password: sshs8_6481354771
-  sni: ul-singapore1.09vpn.com
-  skip-cert-verify: false
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
 - name: 🇸🇬 新加坡 (Singapore) 18 - netmix
-  server: 68.183.227.4
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 19 - netmix
-  server: 77.93.89.2
-  port: 443
-  udp: true
-  type: trojan
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: bgsg1.hikigo.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 20 - netmix
   server: 68.183.227.45
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 19 - netmix
+  server: 15.235.182.183
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 20 - netmix
+  server: 140.245.113.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: f4ca59b2-767d-3425-8dfc-95a96a0e6802
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tF9nKF6amexok5wKbieQ2QRKQI5_ZTFE6MUj1hUBBkY
+    short-id: c940a3b6d60b8611
+  servername: learn.microsoft.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 21 - netmix
+  server: 47.84.226.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: 49b91402-f8e3-4390-9d7b-b7eddc2684a4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gVQsvRtzd77zlvKW4Gk0dAOJNPRa7cfN1-jVe_AJ8Bo
+    short-id: e1c483f9d4437d42
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 22 - netmix
+  server: 128.1.186.132
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 23 - netmix
+  server: 47.129.241.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 47.129.241.99
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - netmix
+  server: 54.179.113.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - netmix
   server: 206.206.78.36
   port: 443
   udp: true
@@ -165,38 +233,50 @@ proxies:
     short-id: 133a3f10a1581047
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 22 - netmix
+- name: 🇸🇬 新加坡 (Singapore) 26 - netmix
+  server: 138.2.89.249
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d042d150716709bb778cc73889cddb02
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
+- name: 🇸🇬 新加坡 (Singapore) 27 - netmix
+  server: bgsg2.hikigo.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: bgsg2.hikigo.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: sj1awrdwnn5lbuno
+- name: 🇸🇬 新加坡 (Singapore) 28 - netmix
+  server: bgsg1.hikigo.com
+  port: 443
+  udp: true
+  type: trojan
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: bgsg1.hikigo.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 29 - netmix
+  server: 43.156.36.253
+  port: 443
+  udp: true
+  type: trojan
+  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
+  sni: tx-hy2
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 30 - netmix
   server: 128.1.186.73
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 23 - netmix
-  server: 128.1.186.132
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 24 - netmix
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 25 - netmix
-  server: 207.148.124.12
-  port: 8443
-  udp: true
-  type: vless
-  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
-  tls: true
-  servername: www.bing.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 26 - netmix
+- name: 🇸🇬 新加坡 (Singapore) 31 - netmix
   server: sg.fasti.win
   port: 443
   udp: true
@@ -209,24 +289,53 @@ proxies:
     short-id: feedbacc
   servername: sg.fasti.win
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 27 - netmix
-  server: 139.162.20.241
+- name: 🇸🇬 新加坡 (Singapore) 32 - netmix
+  server: hkzfsg2.mateflora.com
   port: 443
   udp: true
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: hkzfsg2.mateflora.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: fcfqz5o4znnjqtrp
+- name: 🇸🇬 新加坡 (Singapore) 33 - netmix
+  server: 86.38.247.109
+  port: 2087
+  udp: true
+  type: trojan
+  password: sshs8_6481354771
+  sni: ul-singapore1.09vpn.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 34 - netmix
+  server: 139.162.27.96
+  port: 2096
+  udp: true
   type: vless
-  uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   tls: true
-  reality-opts:
-    public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o
-    short-id: 640c807d
-  servername: itunes.apple.com
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /free-server.techsonic.dev
     headers:
-      Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 28 - netmix
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 35 - netmix
+  server: free.fugui.lol
+  port: 51283
+  udp: true
+  type: vless
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+    short-id: fa514b83
+  servername: swdist.apple.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 36 - netmix
   server: 139.180.221.53
   port: 443
   udp: true
@@ -243,18 +352,39 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 29 - netmix
-  server: 15.235.144.92
-  port: 1270
+- name: 🇸🇬 新加坡 (Singapore) 37 - netmix
+  server: 195.63.138.212
+  port: 9444
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
+  type: hysteria2
+  password: fa937345-6d3e-4ff4-8127-1a836987a0db
+  sni: cloudehouse24.ru
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 30 - netmix
+- name: 🇸🇬 新加坡 (Singapore) 38 - netmix
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9ce32242-557a-4d18-864d-c9c385b3dfa4
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: matrix.learnpodedu.com
+- name: 🇸🇬 新加坡 (Singapore) 39 - netmix
+  server: 43.163.112.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dedd47d-47b9-4ed1-9c9f-cbeecad57a68
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg
+    short-id: 0123456789abcdef
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 40 - netmix
   server: 147.93.173.45
   port: 10444
   udp: true
@@ -266,52 +396,8 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 31 - netmix
-  server: afzuv.xiaoyan.io
-  port: 16618
-  udp: true
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇸🇬 新加坡 (Singapore) 32 - netmix
-  server: 140.245.113.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: f4ca59b2-767d-3425-8dfc-95a96a0e6802
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tF9nKF6amexok5wKbieQ2QRKQI5_ZTFE6MUj1hUBBkY
-    short-id: c940a3b6d60b8611
-  servername: learn.microsoft.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 33 - netmix
-  server: hkzfsg2.mateflora.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: hkzfsg2.mateflora.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: fcfqz5o4znnjqtrp
-- name: 🇸🇬 新加坡 (Singapore) 34 - netmix
-  server: 149.88.23.207
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 35 - netmix
+- name: 🇸🇬 新加坡 (Singapore) 41 - netmix
   server: 15.235.184.127
   port: 443
   udp: true
@@ -319,38 +405,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: exploredigitaljobplatformandfindonlinework.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 36 - netmix
-  server: 195.63.138.212
-  port: 9444
-  udp: true
-  type: hysteria2
-  password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  sni: cloudehouse24.ru
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 37 - netmix
-  server: 5.34.177.164
-  port: 443
-  udp: true
-  type: vless
-  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
-    short-id: b2efed6d157e7bb0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 38 - netmix
-  server: 170.114.45.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: 9ce32242-557a-4d18-864d-c9c385b3dfa4
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.learnpodedu.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -394,6 +448,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 36 - netmix
   - 🇸🇬 新加坡 (Singapore) 37 - netmix
   - 🇸🇬 新加坡 (Singapore) 38 - netmix
+  - 🇸🇬 新加坡 (Singapore) 39 - netmix
+  - 🇸🇬 新加坡 (Singapore) 40 - netmix
+  - 🇸🇬 新加坡 (Singapore) 41 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -437,5 +494,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 36 - netmix
   - 🇸🇬 新加坡 (Singapore) 37 - netmix
   - 🇸🇬 新加坡 (Singapore) 38 - netmix
+  - 🇸🇬 新加坡 (Singapore) 39 - netmix
+  - 🇸🇬 新加坡 (Singapore) 40 - netmix
+  - 🇸🇬 新加坡 (Singapore) 41 - netmix
 rules:
 - MATCH,PROXIES

@@ -12,18 +12,19 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - netmix
-  server: 5.178.109.174
-  port: 14430
+  server: 88.216.60.73
+  port: 443
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - netmix
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   udp: true
   type: vmess
@@ -34,6 +35,39 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - netmix
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 05 - netmix
+  server: 138.199.55.230
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06 - netmix
+  server: sajed.kdns.fr
+  port: 443
+  udp: true
+  type: vless
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
+  network: ws
+  ws-opts:
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
+    headers:
+      Host: sajed.kdns.fr
+- name: 🇸🇪 瑞典 (Sweden) 07 - netmix
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -45,67 +79,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 05 - netmix
-  server: sajed.kdns.fr
-  port: 443
-  udp: true
-  type: vless
-  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
-  network: ws
-  ws-opts:
-    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
-- name: 🇸🇪 瑞典 (Sweden) 06 - netmix
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - netmix
-  server: sw100.marshonet.store
-  port: 8228
-  udp: true
-  type: trojan
-  password: pHLdtRnEC5stYZvt9GqMyMYx215AskPW
-  sni: sw100.marshonet.store
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trgrpc
 - name: 🇸🇪 瑞典 (Sweden) 08 - netmix
-  server: 77.232.143.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: volumestyle.komediyatorg.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 09 - netmix
-  server: swself2.yandex-api.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b81c772-78c2-49d7-ac3f-537b654bc53e
-  tls: true
-  reality-opts:
-    public-key: KQASJC-erEvv8cgBbvJRMfHq0Z0TApsQUNtdSwl0YQY
-    short-id: 8f3e9c4b1a8d6e21
-  servername: smotret.tv
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-service
-- name: 🇸🇪 瑞典 (Sweden) 10 - netmix
-  server: depotchannel.lucheeebezlimitnoekino.stream
+  server: 2.26.93.106
   port: 443
   udp: true
   type: vless
@@ -117,6 +92,16 @@ proxies:
   network: ws
   ws-opts:
     path: /media/ws/
+- name: 🇸🇪 瑞典 (Sweden) 09 - netmix
+  server: m1.config7x.kz.ci
+  port: 26206
+  udp: true
+  type: hysteria2
+  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
+  sni: config7x.de5.net
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: vxvnmus9agdzduvz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,7 +116,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07 - netmix
   - 🇸🇪 瑞典 (Sweden) 08 - netmix
   - 🇸🇪 瑞典 (Sweden) 09 - netmix
-  - 🇸🇪 瑞典 (Sweden) 10 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -146,6 +130,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07 - netmix
   - 🇸🇪 瑞典 (Sweden) 08 - netmix
   - 🇸🇪 瑞典 (Sweden) 09 - netmix
-  - 🇸🇪 瑞典 (Sweden) 10 - netmix
 rules:
 - MATCH,PROXIES

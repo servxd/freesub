@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - netmix",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - netmix",
-      "server": "195.238.126.20",
-      "server_port": 9012,
-      "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - netmix",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - netmix",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -37,61 +21,37 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - netmix",
-      "server": "195.238.126.84",
-      "server_port": 9039,
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - netmix",
+      "server": "195.238.126.20",
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - netmix",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - netmix",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - netmix",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - netmix",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - netmix",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - netmix",
-      "server": "lt-tcp.h1.vpnprime.ru",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - netmix",
+      "server": "84.32.83.197",
       "server_port": 443,
-      "uuid": "9c462694-93fe-4b43-a3a1-bc458d65de82",
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "a96401t.lt4.h1clayd.click",
+        "server_name": "api-dns-gw.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
-          "public_key": "QZsbrRTzJ-nze9D4BJxREqxDBExpyszYpdkK9qO8Jls",
-          "short_id": "d50682df18259eac"
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "a7d309e4c16b825f"
         }
       }
     },
@@ -104,12 +64,7 @@
         "🇱🇹 立陶宛 (Lithuania) 02 - netmix",
         "🇱🇹 立陶宛 (Lithuania) 03 - netmix",
         "🇱🇹 立陶宛 (Lithuania) 04 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 05 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 06 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 07 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 08 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 09 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 10 - netmix"
+        "🇱🇹 立陶宛 (Lithuania) 05 - netmix"
       ]
     },
     {
@@ -120,12 +75,7 @@
         "🇱🇹 立陶宛 (Lithuania) 02 - netmix",
         "🇱🇹 立陶宛 (Lithuania) 03 - netmix",
         "🇱🇹 立陶宛 (Lithuania) 04 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 05 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 06 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 07 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 08 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 09 - netmix",
-        "🇱🇹 立陶宛 (Lithuania) 10 - netmix"
+        "🇱🇹 立陶宛 (Lithuania) 05 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

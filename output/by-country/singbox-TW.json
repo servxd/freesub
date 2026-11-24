@@ -6,40 +6,25 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-      "server": "103.115.109.49",
+      "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%253A",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-      "server": "vpn-tw-002.fastervpn.world",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
         "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - netmix",
-      "server": "162.19.192.89",
-      "server_port": 16616,
-      "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com"
-        }
       }
     },
     {
@@ -48,8 +33,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 - netmix"
       ]
     },
     {
@@ -57,8 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-        "🇹🇼 中国台湾 (Taiwan) 03 - netmix"
+        "🇹🇼 中国台湾 (Taiwan) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

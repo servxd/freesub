@@ -6,28 +6,28 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   server: dog-hk.kunlun01dns.com
-  port: 21021
+  port: 21019
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16115
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
   server: dog-hk.kunlun01dns.com
-  port: 21020
+  port: 21022
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
-  server: 5641sdds.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: images.ctfassets.net
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
   server: ibsdsf.df6h451rh.xin
   port: 443
@@ -36,6 +36,14 @@ proxies:
   password: 2902c46c8493
   sni: docs.microsoft.com
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
+  server: 5641sdds.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,8 +51,9 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,7 +61,8 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - netmix
 rules:
 - MATCH,PROXIES
