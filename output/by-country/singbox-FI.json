@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "fa15684a-81e6-4ba7-bc4b-f601c0d998e9",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - netmix",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
@@ -33,28 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
-      "server": "157.180.98.124",
-      "server_port": 49659,
-      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
-          "short_id": "81959fce"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - netmix",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
       "server": "45.86.158.53",
       "server_port": 443,
       "uuid": "082ff568-e0f1-42af-ad7c-2c46adde1273",
@@ -74,35 +37,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - netmix",
-      "server": "188.225.46.6",
-      "server_port": 443,
-      "uuid": "a077dc9a-712f-48ea-b75c-d94af64011ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "spb.b2ai.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "fa15684a-81e6-4ba7-bc4b-f601c0d998e9",
+      "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - netmix",
-      "server": "213.176.92.168",
-      "server_port": 14430,
-      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "213.176.92.168"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "45dc10c6-04c8-4c70-a06a-d396254a6c0b",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -112,10 +60,7 @@
         "🇫🇮 芬兰 (Finland) 01 - netmix",
         "🇫🇮 芬兰 (Finland) 02 - netmix",
         "🇫🇮 芬兰 (Finland) 03 - netmix",
-        "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix",
-        "🇫🇮 芬兰 (Finland) 06 - netmix",
-        "🇫🇮 芬兰 (Finland) 07 - netmix"
+        "🇫🇮 芬兰 (Finland) 04 - netmix"
       ]
     },
     {
@@ -125,10 +70,7 @@
         "🇫🇮 芬兰 (Finland) 01 - netmix",
         "🇫🇮 芬兰 (Finland) 02 - netmix",
         "🇫🇮 芬兰 (Finland) 03 - netmix",
-        "🇫🇮 芬兰 (Finland) 04 - netmix",
-        "🇫🇮 芬兰 (Finland) 05 - netmix",
-        "🇫🇮 芬兰 (Finland) 06 - netmix",
-        "🇫🇮 芬兰 (Finland) 07 - netmix"
+        "🇫🇮 芬兰 (Finland) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

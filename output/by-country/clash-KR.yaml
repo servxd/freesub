@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - netmix
-  server: 218.237.185.234
-  port: 4652
+  server: 140.238.2.250
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - netmix
-  server: 152.70.237.123
-  port: 2053
+  server: 132.226.226.189
+  port: 50160
   udp: true
   type: hysteria2
-  password: maintell
-  sni: bing.com
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 132.226.226.189
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - netmix
   server: 43.108.109.112
@@ -33,19 +34,30 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 04 - netmix
-  server: 132.145.80.230
-  port: 80
+  server: 152.70.237.123
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
+  type: hysteria2
+  password: maintell
+  sni: bing.comsocks5://152.70.237.238:3128
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - netmix
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - netmix
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - netmix
   server: 168.107.51.32
   port: 20045
   udp: true
@@ -53,7 +65,7 @@ proxies:
   password: 463f7453753f4d47
   sni: ikr200.zxom.eu.org
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 06 - netmix
+- name: 🇰🇷 韩国 (South Korea) 08 - netmix
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -62,23 +74,20 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 07 - netmix
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - netmix
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152.69.231.175
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - netmix
+  server: 47.80.19.173
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 10 - netmix
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -86,14 +95,13 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - netmix
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
+- name: 🇰🇷 韩国 (South Korea) 11 - netmix
+  server: p141.panda001.net
+  port: 4652
   udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 127.0.0.1
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +117,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - netmix
   - 🇰🇷 韩国 (South Korea) 09 - netmix
   - 🇰🇷 韩国 (South Korea) 10 - netmix
+  - 🇰🇷 韩国 (South Korea) 11 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,5 +133,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - netmix
   - 🇰🇷 韩国 (South Korea) 09 - netmix
   - 🇰🇷 韩国 (South Korea) 10 - netmix
+  - 🇰🇷 韩国 (South Korea) 11 - netmix
 rules:
 - MATCH,PROXIES

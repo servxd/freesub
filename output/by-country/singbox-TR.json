@@ -6,26 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - netmix",
-      "server": "188.225.36.219",
-      "server_port": 443,
-      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
-      "tls": {
-        "enabled": true,
-        "server_name": "olvento.space",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "olvento.sync.v1"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - netmix",
       "server": "172.64.155.209",
       "server_port": 443,
       "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
@@ -50,43 +30,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - netmix",
-      "server": "147.45.66.208",
-      "server_port": 43000,
-      "uuid": "01e61db7-9e0b-4431-a995-a5288a01b951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "147.45.66.208",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg",
-          "short_id": "4d3d8e15"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - netmix",
-        "🇹🇷 土耳其 (Turkey) 02 - netmix",
-        "🇹🇷 土耳其 (Turkey) 03 - netmix"
+        "🇹🇷 土耳其 (Turkey) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - netmix",
-        "🇹🇷 土耳其 (Turkey) 02 - netmix",
-        "🇹🇷 土耳其 (Turkey) 03 - netmix"
+        "🇹🇷 土耳其 (Turkey) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

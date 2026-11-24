@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - netmix",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "tag": "🇨🇳 CN 01 - netmix",
+      "server": "150.242.244.116",
+      "server_port": 2648,
+      "uuid": "5d746f1e-7028-455f-bb00-1806249a5941",
       "security": "auto"
     },
     {
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - netmix"
+        "🇨🇳 CN 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - netmix"
+        "🇨🇳 CN 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
