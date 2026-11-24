@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - netmix
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  udp: true
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - netmix
+  server: 88.210.52.136
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9df9ee1a-0671-4c6c-93c7-65598fb946f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bghjRaZFOKOS1TwpvBXyQJetutvQigF3_5jgSC4fUjE
+    short-id: a671b94142229346
+  servername: ruturkeymicro5.gangtype.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - netmix
   server: 172.64.155.209
   port: 443
   udp: true
@@ -13,7 +36,6 @@ proxies:
   tls: true
   servername: sinavm3.soft10.ir
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
@@ -25,11 +47,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
+  - 🇹🇷 土耳其 (Turkey) 02 - netmix
+  - 🇹🇷 土耳其 (Turkey) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
+  - 🇹🇷 土耳其 (Turkey) 02 - netmix
+  - 🇹🇷 土耳其 (Turkey) 03 - netmix
 rules:
 - MATCH,PROXIES

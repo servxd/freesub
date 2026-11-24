@@ -4,140 +4,48 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - netmix",
-      "server": "188.114.99.137",
+      "server": "fr-free.fastestrelay.com",
       "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
+      "uuid": "43BCAE0A-10A6-4003-8615-BD510F4215BA",
       "tls": {
         "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
-        "insecure": false
+        "server_name": "fr-free.fastestrelay.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/700gvl-us-free",
         "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
+          "Host": "fr-free.fastestrelay.com"
         }
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - netmix",
-      "server": "188.114.99.137",
+      "server": "104.18.32.47",
       "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
+      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
       "tls": {
         "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 03 - netmix",
-      "server": "104.17.145.43",
-      "server_port": 443,
-      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
-      "tls": {
-        "enabled": true,
-        "server_name": "estuary.gerqix.online",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/de7/stream",
-        "headers": {
-          "Host": "estuary.gerqix.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 04 - netmix",
-      "server": "104.17.145.43",
-      "server_port": 443,
-      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
-      "tls": {
-        "enabled": true,
-        "server_name": "estuary.gerqix.online",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/de7/stream",
-        "headers": {
-          "Host": "estuary.gerqix.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 05 - netmix",
-      "server": "104.17.145.43",
-      "server_port": 443,
-      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
-      "tls": {
-        "enabled": true,
-        "server_name": "parchment.merlano.monster",
+        "server_name": "sinavm2.soft10.ir",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/api/de7/stream",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
         "headers": {
-          "Host": "parchment.merlano.monster"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 06 - netmix",
-      "server": "188.114.99.137",
-      "server_port": 80,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 07 - netmix",
-      "server": "188.114.99.137",
-      "server_port": 80,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
+          "Host": "sinavm2.soft10.ir"
         }
       }
     },
@@ -147,12 +55,7 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - netmix",
-        "🌐 其他地区 (Other) 02 - netmix",
-        "🌐 其他地区 (Other) 03 - netmix",
-        "🌐 其他地区 (Other) 04 - netmix",
-        "🌐 其他地区 (Other) 05 - netmix",
-        "🌐 其他地区 (Other) 06 - netmix",
-        "🌐 其他地区 (Other) 07 - netmix"
+        "🌐 其他地区 (Other) 02 - netmix"
       ]
     },
     {
@@ -160,12 +63,7 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - netmix",
-        "🌐 其他地区 (Other) 02 - netmix",
-        "🌐 其他地区 (Other) 03 - netmix",
-        "🌐 其他地区 (Other) 04 - netmix",
-        "🌐 其他地区 (Other) 05 - netmix",
-        "🌐 其他地区 (Other) 06 - netmix",
-        "🌐 其他地区 (Other) 07 - netmix"
+        "🌐 其他地区 (Other) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

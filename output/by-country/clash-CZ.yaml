@@ -18,6 +18,14 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - netmix
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16280
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇨🇿 捷克 (Czech) 03 - netmix
   server: 153.52.69.249
   port: 443
   udp: true
@@ -29,19 +37,6 @@ proxies:
     public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
     short-id: d5492c7a39515c65
   servername: cache-78.topp-con.xyz
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - netmix
-  server: leviko-nl2962.shopingggg.ir
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

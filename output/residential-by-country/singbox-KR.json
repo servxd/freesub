@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 01 - netmix",
-      "server": "150.242.244.116",
-      "server_port": 2648,
-      "uuid": "5d746f1e-7028-455f-bb00-1806249a5941",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - netmix"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - netmix"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

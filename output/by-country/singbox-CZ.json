@@ -25,8 +25,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇨🇿 捷克 (Czech) 02 - netmix",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16280,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - netmix",
       "server": "153.52.69.249",
       "server_port": 443,
       "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
@@ -42,27 +50,6 @@
           "enabled": true,
           "public_key": "WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U",
           "short_id": "d5492c7a39515c65"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - netmix",
-      "server": "leviko-nl2962.shopingggg.ir",
-      "server_port": 9543,
-      "uuid": "920b3cd9-4f82-4669-bbd2-d4a28b9052c6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "storage.yandexcloud.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcdf"
         }
       }
     },

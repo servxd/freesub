@@ -5,20 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - netmix
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - netmix
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - netmix
-  server: 160.187.100.109
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - netmix
+  server: theme.lovehk.xyz
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
+  type: anytls
+  password: 1ab804ed-fea9-4374-8d11-e6866495d8d0
+  sni: theme.lovehk.xyz
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - netmix
+  server: mfjh645drfj1dr6j5.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -27,6 +43,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +52,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - netmix
   - 🇹🇼 中国台湾 (Taiwan) 02 - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 03 - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 - netmix
 rules:
 - MATCH,PROXIES

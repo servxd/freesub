@@ -5,28 +5,51 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
+  server: 18.197.131.255
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
   server: 47.254.175.2
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
-  server: dog-hk.kunlun01dns.com
-  port: 21020
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 03 (移动家宽) - netmix
-  server: 8.209.73.203
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - netmix
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+  server: rtifgjdr.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
+  server: 5641sdds.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
   server: a54ge.df6h451rh.xin
   port: 443
   udp: true
@@ -34,7 +57,7 @@ proxies:
   password: 0324fbc29561
   sni: docs.microsoft.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
   server: 60.248.219.78
   port: 443
   udp: true
@@ -48,23 +71,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
-  server: mfjh645drfj1dr6j5.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 2902c46c8493
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - netmix
   server: ibsdsf.df6h451rh.xin
   port: 443
   udp: true
@@ -72,41 +79,43 @@ proxies:
   password: 2902c46c8493
   sni: docs.microsoft.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - netmix
-  server: rtifgjdr.df6h451rh.xin
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 10 (家宽) - netmix
+  server: 195.133.135.238
+  port: 10086
   udp: true
-  type: anytls
-  password: 2902c46c8493
-  sni: docs.microsoft.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
-  - 🇩🇪 德国 (Germany) 03 (移动家宽) - netmix
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - netmix
+  - 🇸🇬 新加坡 (Singapore) 10 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - netmix
-  - 🇩🇪 德国 (Germany) 03 (移动家宽) - netmix
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 09 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - netmix
+  - 🇸🇬 新加坡 (Singapore) 10 (家宽) - netmix
 rules:
 - MATCH,PROXIES

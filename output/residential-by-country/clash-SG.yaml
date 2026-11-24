@@ -4,12 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - netmix
-  server: 150.242.244.116
-  port: 2648
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
+  server: 195.133.135.238
+  port: 10086
   udp: true
   type: vmess
-  uuid: 5d746f1e-7028-455f-bb00-1806249a5941
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - netmix
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - netmix
 rules:
 - MATCH,PROXIES
