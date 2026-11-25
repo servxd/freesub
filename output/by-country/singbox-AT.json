@@ -12,25 +12,12 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 02 - netmix",
-      "server": "144.31.131.73",
-      "server_port": 443,
-      "uuid": "534a0469-a507-4fec-b9a1-f648864e5da0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aura2.fastlaplegends.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QQgfv5J_fvr_v7GrfflVOb9ZRvBf66qfRzGWS8EKxQw",
-          "short_id": ""
-        }
-      }
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
     },
     {
       "type": "vmess",
@@ -46,12 +33,25 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 04 - netmix",
-      "server": "152.53.1.57",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
+      "server": "212.118.56.133",
+      "server_port": 443,
+      "uuid": "9df9ee1a-0671-4c6c-93c7-65598fb946f7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ruastriamicro1.gangplatform.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "woALl3tJ66hfoRmufkkINfiVyiw30EGB3lBixC9axV4",
+          "short_id": "b74ad1d666c50539"
+        }
+      }
     },
     {
       "type": "selector",

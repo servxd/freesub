@@ -6,46 +6,23 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - netmix",
-      "server": "fr-free.fastestrelay.com",
+      "server": "172.67.139.189",
       "server_port": 443,
-      "uuid": "43BCAE0A-10A6-4003-8615-BD510F4215BA",
+      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
       "tls": {
         "enabled": true,
         "server_name": "fr-free.fastestrelay.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/700gvl-us-free",
+        "path": "/700gvl",
         "headers": {
           "Host": "fr-free.fastestrelay.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - netmix",
-      "server": "104.18.32.47",
-      "server_port": 443,
-      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
-      "tls": {
-        "enabled": true,
-        "server_name": "sinavm2.soft10.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
-        "headers": {
-          "Host": "sinavm2.soft10.ir"
         }
       }
     },
@@ -54,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - netmix",
-        "🌐 其他地区 (Other) 02 - netmix"
+        "🌐 其他地区 (Other) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - netmix",
-        "🌐 其他地区 (Other) 02 - netmix"
+        "🌐 其他地区 (Other) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
