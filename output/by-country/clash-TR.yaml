@@ -5,27 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - netmix
-  server: 172.64.155.209
-  port: 443
+  server: 38.180.104.37
+  port: 19084
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: ff4d354078394558933d699be149ad69
+- name: 🇹🇷 土耳其 (Turkey) 02 - netmix
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
   udp: true
   type: vless
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   tls: true
-  servername: sinavm3.soft10.ir
+  servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 - netmix
+- name: 🇹🇷 土耳其 (Turkey) 03 - netmix
   server: tr.subscriptionservice.ir
   port: 2089
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+  password: gE-xKyJBjelgHz2-vjexshOhTuxG-0h7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
+  - 🇹🇷 土耳其 (Turkey) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - netmix
   - 🇹🇷 土耳其 (Turkey) 02 - netmix
+  - 🇹🇷 土耳其 (Turkey) 03 - netmix
 rules:
 - MATCH,PROXIES

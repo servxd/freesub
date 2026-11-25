@@ -6,6 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - netmix",
+      "server": "3.106.35.101",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.106.35.101",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
       "server": "13.55.52.44",
       "server_port": 36712,
       "password": "linlin-2026",
@@ -17,25 +29,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
       "server": "13.237.192.121",
       "server_port": 36712,
       "password": "linlin-2026",
       "tls": {
         "enabled": true,
         "server_name": "13.237.192.121",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
-      "server": "3.106.35.101",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "3.106.35.101",
         "insecure": true
       }
     },
@@ -58,6 +58,22 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - netmix",
+      "server": "159.13.55.48",
+      "server_port": 20000,
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-au2.whuiy.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - netmix",
       "server": "159.13.55.48",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -83,7 +99,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
         "🇦🇺 澳大利亚 (Australia) 03 - netmix",
         "🇦🇺 澳大利亚 (Australia) 04 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 05 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 05 - netmix",
+        "🇦🇺 澳大利亚 (Australia) 06 - netmix"
       ]
     },
     {
@@ -94,7 +111,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
         "🇦🇺 澳大利亚 (Australia) 03 - netmix",
         "🇦🇺 澳大利亚 (Australia) 04 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 05 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 05 - netmix",
+        "🇦🇺 澳大利亚 (Australia) 06 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

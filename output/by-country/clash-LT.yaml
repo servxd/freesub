@@ -6,73 +6,54 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - netmix
   server: 195.238.126.20
-  port: 9086
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - netmix
-  server: 195.238.126.84
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - netmix
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - netmix
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - netmix
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - netmix
+  server: 195.238.126.84
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - netmix
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - netmix
-  server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - netmix
   server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - netmix
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - netmix
   server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - netmix
-  server: 84.32.209.118
-  port: 443
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - netmix
+  server: 195.238.126.20
+  port: 9011
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7d309e4c16b825f
-  servername: api-dns-gw.galioncc.com
-  client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - netmix
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - netmix
   server: 84.32.209.54
   port: 443
   udp: true
@@ -85,13 +66,18 @@ proxies:
     short-id: 868419504747f6de
   servername: lt.memepn.com
   client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 11 - netmix
-  server: 195.238.126.20
-  port: 9045
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - netmix
+  server: 84.32.209.118
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7d309e4c16b825f
+  servername: api-dns-gw.galioncc.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,8 +92,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 08 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 09 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 10 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 11 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,7 +106,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 08 - netmix
   - 🇱🇹 立陶宛 (Lithuania) 09 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 10 - netmix
-  - 🇱🇹 立陶宛 (Lithuania) 11 - netmix
 rules:
 - MATCH,PROXIES

@@ -4,38 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - netmix",
-      "server": "172.64.155.209",
-      "server_port": 443,
-      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
+      "server": "38.180.104.37",
+      "server_port": 19084,
+      "method": "aes-128-gcm",
+      "password": "ff4d354078394558933d699be149ad69"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - netmix",
+      "server": "turkey-ip1.mmdaqaorg.xyz",
+      "server_port": 50738,
+      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
         "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
+        "server_name": "turkey-ip1.mmdaqaorg.xyz",
         "insecure": false,
         "alpn": [
+          "h2",
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
-        "headers": {
-          "Host": "sinavm3.soft10.ir"
-        }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - netmix",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - netmix",
       "server": "tr.subscriptionservice.ir",
       "server_port": 2089,
       "method": "chacha20-ietf-poly1305",
-      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
+      "password": "gE-xKyJBjelgHz2-vjexshOhTuxG-0h7"
     },
     {
       "type": "selector",
@@ -43,7 +45,8 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
-        "🇹🇷 土耳其 (Turkey) 02 - netmix"
+        "🇹🇷 土耳其 (Turkey) 02 - netmix",
+        "🇹🇷 土耳其 (Turkey) 03 - netmix"
       ]
     },
     {
@@ -51,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - netmix",
-        "🇹🇷 土耳其 (Turkey) 02 - netmix"
+        "🇹🇷 土耳其 (Turkey) 02 - netmix",
+        "🇹🇷 土耳其 (Turkey) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
