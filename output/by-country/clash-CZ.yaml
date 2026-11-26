@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - netmix
-  server: 195.123.245.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - netmix
-  server: leviko-nl2962.shopingggg.ir
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - netmix
   server: 109.248.17.252
   port: 443
   udp: true
@@ -39,50 +13,21 @@ proxies:
   tls: true
   servername: v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com
-- name: 🇨🇿 捷克 (Czech) 04 - netmix
-  server: 195.133.93.179
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 05 - netmix
-  server: leviko-nl9472.shopingggg.ir
-  port: 9543
-  udp: true
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 06 - netmix
-  server: 94.183.234.245
+- name: 🇨🇿 捷克 (Czech) 02 - netmix
+  server: 109.248.17.252
   port: 443
   udp: true
   type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
+  uuid: 9000a7f3-df2a-49a8-ae56-3e7777bd32f7
   tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
-- name: 🇨🇿 捷克 (Czech) 07 - netmix
+  servername: v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 03 - netmix
   server: 153.52.69.249
   port: 443
   udp: true
@@ -103,10 +48,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - netmix
   - 🇨🇿 捷克 (Czech) 02 - netmix
   - 🇨🇿 捷克 (Czech) 03 - netmix
-  - 🇨🇿 捷克 (Czech) 04 - netmix
-  - 🇨🇿 捷克 (Czech) 05 - netmix
-  - 🇨🇿 捷克 (Czech) 06 - netmix
-  - 🇨🇿 捷克 (Czech) 07 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,9 +56,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - netmix
   - 🇨🇿 捷克 (Czech) 02 - netmix
   - 🇨🇿 捷克 (Czech) 03 - netmix
-  - 🇨🇿 捷克 (Czech) 04 - netmix
-  - 🇨🇿 捷克 (Czech) 05 - netmix
-  - 🇨🇿 捷克 (Czech) 06 - netmix
-  - 🇨🇿 捷克 (Czech) 07 - netmix
 rules:
 - MATCH,PROXIES

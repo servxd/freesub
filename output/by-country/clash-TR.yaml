@@ -27,7 +27,7 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: gE-xKyJBjelgHz2-vjexshOhTuxG-0h7
+  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
 proxy-groups:
 - name: PROXIES
   type: select
