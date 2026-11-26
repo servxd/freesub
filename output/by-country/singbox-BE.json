@@ -4,12 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇧🇪 比利时 (Belgium) 01 - netmix",
-      "server": "38.180.87.217",
-      "server_port": 11943,
-      "method": "aes-128-gcm",
-      "password": "fa938a7d397bda0f23e32143542ac0bb"
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16307,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",

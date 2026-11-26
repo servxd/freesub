@@ -5,34 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - netmix
-  server: 47.81.36.173
-  port: 18565
+  server: 108.138.26.63
+  port: 80
   udp: true
-  type: vmess
-  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 - netmix
-  server: 8.213.211.160
-  port: 18565
-  udp: true
-  type: vmess
-  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 05f53797-bd04-4006-8a78-41c071e67837
+  network: ws
+  ws-opts:
+    path: /tikvpn2/
+    headers:
+      Host: d27g7kjkk3cw22.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - netmix
-  - 🇹🇭 泰国 (Thailand) 02 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - netmix
-  - 🇹🇭 泰国 (Thailand) 02 - netmix
 rules:
 - MATCH,PROXIES

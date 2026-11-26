@@ -12,26 +12,54 @@ proxies:
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 02 - netmix
-  server: 45.158.197.237
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 18baf01c-99b2-4675-997c-1ec73e3eadff
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - netmix
-  server: 130.49.189.158
-  port: 43558
+  server: 185.22.152.168
+  port: 18443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 03 - netmix
+  server: 91.206.92.158
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 🇷🇺 俄罗斯 (Russia) 04 - netmix
+  server: 136.148.83.69
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  sni: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - netmix
+  server: leviko-ru0640.shopingggg.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 06 - netmix
+  server: 201.24.116.192
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 07 - netmix
   server: 147.45.221.225
   port: 443
   udp: true
@@ -43,37 +71,8 @@ proxies:
   network: ws
   ws-opts:
     path: /media/ws/
-- name: 🇷🇺 俄罗斯 (Russia) 05 - netmix
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
-  sni: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - netmix
-  server: 78.159.240.11
-  port: 445
-  udp: true
-  type: vless
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  tls: true
-  reality-opts:
-    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇷🇺 俄罗斯 (Russia) 07 - netmix
-  server: 91.206.92.158
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 🇷🇺 俄罗斯 (Russia) 08 - netmix
-  server: 200.169.179.233
+  server: vps3.nemnogogo.com
   port: 443
   udp: true
   type: vless
@@ -86,20 +85,33 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 09 - netmix
-  server: ru1.japancase.site
+  server: 194.26.229.207
+  port: 4100
+  udp: true
+  type: vless
+  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+- name: 🇷🇺 俄罗斯 (Russia) 10 - netmix
+  server: 196.245.153.104
   port: 443
   udp: true
   type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: SiwxBWpYrdcS70DDnr0yBrTgpJY-MiqKiOs3_yjK1Cc
-    short-id: 5b555442d5975d6b
-  servername: ru1.japancase.site
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 10 - netmix
-  server: xssite.webredirect.org
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: 🇷🇺 俄罗斯 (Russia) 11 - netmix
+  server: 147.45.175.81
   port: 443
   udp: true
   type: vless
@@ -111,64 +123,41 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 11 - netmix
-  server: 188.225.56.100
-  port: 443
-  udp: true
-  type: vless
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
-  tls: true
-  servername: e2.cdnwh.icu
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /stream/segment/3078a41dd7eb/
-    headers:
-      Host: e2.cdnwh.icu
 - name: 🇷🇺 俄罗斯 (Russia) 12 - netmix
-  server: 89.169.54.244
+  server: 145.249.109.248
   port: 443
   udp: true
   type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: 🇷🇺 俄罗斯 (Russia) 13 - netmix
-  server: 46.243.232.149
-  port: 443
-  udp: true
-  type: vless
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
-  tls: true
-  servername: e3.cdnwh.icu
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /edge/chunk/b2265efffa29/
-    headers:
-      Host: e3.cdnwh.icu
-- name: 🇷🇺 俄罗斯 (Russia) 14 - netmix
-  server: 161.104.89.173
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 8f092ef0-a7e6-03e9-b989-836aebc00ff7
+  uuid: 5dd4822d-b8dc-49dd-84b6-c3ea44ef42f7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DulhUFMYzxIsucjtPONJQMszzyi9V6bqQ9WI3GjGFAY
-    short-id: abc123
-  servername: ya.ru
-  client-fingerprint: chrome
+    public-key: gM_rANbedeIHB3Y1ltLG60xS1i2TuYt0PKgAgC1TzR4
+    short-id: 29455a3a790acbd0
+  servername: mcsp.67resserv67.info
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 13 - netmix
+  server: 194.26.229.207
+  port: 2200
+  udp: true
+  type: vless
+  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
+  network: ws
+  ws-opts:
+    path: /v1
+- name: 🇷🇺 俄罗斯 (Russia) 14 - netmix
+  server: 45.158.197.237
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 18baf01c-99b2-4675-997c-1ec73e3eadff
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

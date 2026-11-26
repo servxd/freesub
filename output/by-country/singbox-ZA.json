@@ -32,13 +32,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇿🇦 南非 (South Africa) 04 - netmix",
+      "server": "16.28.28.15",
+      "server_port": 443,
+      "uuid": "8ce18eab-fcc0-4757-b552-dbda5047ea11",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "za-a-zzy.glnyhlgc.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/7788/about"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - netmix",
         "🇿🇦 南非 (South Africa) 02 - netmix",
-        "🇿🇦 南非 (South Africa) 03 - netmix"
+        "🇿🇦 南非 (South Africa) 03 - netmix",
+        "🇿🇦 南非 (South Africa) 04 - netmix"
       ]
     },
     {
@@ -47,7 +65,8 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - netmix",
         "🇿🇦 南非 (South Africa) 02 - netmix",
-        "🇿🇦 南非 (South Africa) 03 - netmix"
+        "🇿🇦 南非 (South Africa) 03 - netmix",
+        "🇿🇦 南非 (South Africa) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

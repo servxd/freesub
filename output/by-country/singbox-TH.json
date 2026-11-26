@@ -4,36 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - netmix",
-      "server": "47.81.36.173",
-      "server_port": 18565,
-      "uuid": "853a251f-de85-40cc-84a6-ab8748c7258c",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - netmix",
-      "server": "8.213.211.160",
-      "server_port": 18565,
-      "uuid": "853a251f-de85-40cc-84a6-ab8748c7258c",
-      "security": "auto"
+      "server": "108.138.26.63",
+      "server_port": 80,
+      "uuid": "05f53797-bd04-4006-8a78-41c071e67837",
+      "transport": {
+        "type": "ws",
+        "path": "/tikvpn2/",
+        "headers": {
+          "Host": "d27g7kjkk3cw22.cloudfront.net"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - netmix",
-        "🇹🇭 泰国 (Thailand) 02 - netmix"
+        "🇹🇭 泰国 (Thailand) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - netmix",
-        "🇹🇭 泰国 (Thailand) 02 - netmix"
+        "🇹🇭 泰国 (Thailand) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

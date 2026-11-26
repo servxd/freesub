@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - netmix
-  server: 153.56.231.124
-  port: 443
+  server: 94.183.164.119
+  port: 24433
   udp: true
-  type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tZoiwNSZeaVBoLJJcXe9A-GzCtbvU95fKkAJLc0vrgU
-    short-id: 6fddab1e1e358290
-  servername: f309e0t.fi4.h1clayd.click
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - netmix
   server: 31.76.77.231
   port: 443
@@ -31,13 +26,37 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - netmix
-  server: 94.183.164.119
-  port: 24433
+  server: mail1.besttotaldns.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mail1.besttotaldns.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - netmix
+  server: 4f070970.con.metricdraft.tech
+  port: 443
   udp: true
   type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
+  password: 030e421e-9317-4cb8-8fbe-a07a565ad3db
+  sni: 4f070970.con.metricdraft.tech
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 - netmix
+  server: 2.27.203.38
+  port: 443
+  udp: true
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Xuy5y3WGJjkxyUtkhiY87dwndv4fuD45gO64TWnlThI
+    short-id: fd0cc2b3ac52deb8
+  servername: www.google.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +65,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - netmix
   - 🇫🇮 芬兰 (Finland) 02 - netmix
   - 🇫🇮 芬兰 (Finland) 03 - netmix
+  - 🇫🇮 芬兰 (Finland) 04 - netmix
+  - 🇫🇮 芬兰 (Finland) 05 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +75,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - netmix
   - 🇫🇮 芬兰 (Finland) 02 - netmix
   - 🇫🇮 芬兰 (Finland) 03 - netmix
+  - 🇫🇮 芬兰 (Finland) 04 - netmix
+  - 🇫🇮 芬兰 (Finland) 05 - netmix
 rules:
 - MATCH,PROXIES
