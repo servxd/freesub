@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - netmix",
-      "server": "dry-snowflake-b29f.vpnetwork3567.workers.dev",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - netmix",
+      "server": "bitter-math-4364.vpnetwork3567.workers.dev",
       "server_port": 443,
       "password": "963A4918-A630-29DA-A873-093CDF8AD784",
       "tls": {
         "enabled": true,
-        "server_name": "dry-snowflake-b29f.vpnetwork3567.workers.dev",
+        "server_name": "bitter-math-4364.vpnetwork3567.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -21,7 +21,7 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "dry-snowflake-b29f.vpnetwork3567.workers.dev"
+          "Host": "bitter-math-4364.vpnetwork3567.workers.dev"
         }
       }
     },
@@ -30,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - netmix"
+        "🇺🇦 乌克兰 (Ukraine) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 (Moldova) 01 - netmix"
+        "🇺🇦 乌克兰 (Ukraine) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

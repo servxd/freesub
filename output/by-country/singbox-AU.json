@@ -6,42 +6,6 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - netmix",
-      "server": "3.106.35.101",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "3.106.35.101",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
-      "server": "13.55.52.44",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "13.55.52.44",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
-      "server": "13.237.192.121",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "13.237.192.121",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - netmix",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -57,7 +21,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - netmix",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - netmix",
       "server": "159.13.55.48",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -75,15 +39,36 @@
       ]
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - netmix",
+      "server": "46.250.246.11",
+      "server_port": 8443,
+      "uuid": "591e7de6-f2dd-4ff9-ae21-8e00d5affa2a",
+      "tls": {
+        "enabled": true,
+        "server_name": "46-250-246-11.sslip.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-live",
+        "headers": {
+          "Host": "46-250-246-11.sslip.io"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - netmix",
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 03 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 04 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 05 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 03 - netmix"
       ]
     },
     {
@@ -92,9 +77,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - netmix",
         "🇦🇺 澳大利亚 (Australia) 02 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 03 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 04 - netmix",
-        "🇦🇺 澳大利亚 (Australia) 05 - netmix"
+        "🇦🇺 澳大利亚 (Australia) 03 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

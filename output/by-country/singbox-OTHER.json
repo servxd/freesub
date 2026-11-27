@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - netmix",
-      "server": "172.64.229.21",
+      "server": "cf.877771.xyz",
       "server_port": 443,
       "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
@@ -26,7 +26,7 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - netmix",
-      "server": "172.64.229.21",
+      "server": "cf.877771.xyz",
       "server_port": 443,
       "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
@@ -43,7 +43,7 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 03 - netmix",
-      "server": "172.64.229.21",
+      "server": "cf.877771.xyz",
       "server_port": 443,
       "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
@@ -63,7 +63,27 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 04 - netmix",
-      "server": "172.64.229.21",
+      "server": "cf.877771.xyz",
+      "server_port": 443,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vmess.lbw666.dpdns.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws?ed=2048",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 05 - netmix",
+      "server": "cf.877771.xyz",
       "server_port": 443,
       "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
@@ -79,8 +99,8 @@
     },
     {
       "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 05 - netmix",
-      "server": "172.64.229.21",
+      "tag": "🌐 其他地区 (Other) 06 - netmix",
+      "server": "cf.877771.xyz",
       "server_port": 443,
       "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
@@ -99,19 +119,44 @@
     },
     {
       "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 06 - netmix",
-      "server": "172.64.229.21",
-      "server_port": 443,
+      "tag": "🌐 其他地区 (Other) 07 - netmix",
+      "server": "104.21.0.1",
+      "server_port": 80,
       "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
       "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
-        "insecure": false
-      },
       "transport": {
         "type": "ws",
-        "path": "/ws?ed=2048",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 08 - netmix",
+      "server": "104.21.0.1",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 09 - netmix",
+      "server": "104.21.0.1",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
         "headers": {
           "Host": "vmess.lbw666.dpdns.org"
         }
@@ -127,7 +172,10 @@
         "🌐 其他地区 (Other) 03 - netmix",
         "🌐 其他地区 (Other) 04 - netmix",
         "🌐 其他地区 (Other) 05 - netmix",
-        "🌐 其他地区 (Other) 06 - netmix"
+        "🌐 其他地区 (Other) 06 - netmix",
+        "🌐 其他地区 (Other) 07 - netmix",
+        "🌐 其他地区 (Other) 08 - netmix",
+        "🌐 其他地区 (Other) 09 - netmix"
       ]
     },
     {
@@ -139,7 +187,10 @@
         "🌐 其他地区 (Other) 03 - netmix",
         "🌐 其他地区 (Other) 04 - netmix",
         "🌐 其他地区 (Other) 05 - netmix",
-        "🌐 其他地区 (Other) 06 - netmix"
+        "🌐 其他地区 (Other) 06 - netmix",
+        "🌐 其他地区 (Other) 07 - netmix",
+        "🌐 其他地区 (Other) 08 - netmix",
+        "🌐 其他地区 (Other) 09 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

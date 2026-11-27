@@ -13,21 +13,43 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - netmix
-  server: xray-ikmqcro3-rapid-river-6.cloady.io
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
-  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
   tls: true
-  servername: xray-ikmqcro3-rapid-river-6.cloady.io
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 03 - netmix
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 04 - netmix
+  server: 147.93.171.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 591e7de6-f2dd-4ff9-ae21-8e00d5affa2a
+  tls: true
+  servername: 147-93-171-8.sslip.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /c54a815e676d9acc
+    path: /vpn-live
     headers:
-      Host: xray-ikmqcro3-rapid-river-6.cloady.io
-- name: 🇮🇳 印度 (India) 03 - netmix
+      Host: 147-93-171-8.sslip.io
+- name: 🇮🇳 印度 (India) 05 - netmix
   server: xray-dmr3b3hy-calm-maple-7.cloady.io
   port: 443
   udp: true
@@ -39,20 +61,17 @@ proxies:
   network: ws
   ws-opts:
     path: /0175469f14317d82
-- name: 🇮🇳 印度 (India) 04 - netmix
-  server: 13.140.253.35
-  port: 443
+- name: 🇮🇳 印度 (India) 06 - netmix
+  server: 152.67.8.205
+  port: 80
   udp: true
-  type: vless
-  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
-  tls: true
-  servername: xray-ikmqcro3-rapid-river-6.cloady.io
-  skip-cert-verify: false
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /c54a815e676d9acc
-    headers:
-      Host: xray-ikmqcro3-rapid-river-6.cloady.io
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +81,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - netmix
   - 🇮🇳 印度 (India) 03 - netmix
   - 🇮🇳 印度 (India) 04 - netmix
+  - 🇮🇳 印度 (India) 05 - netmix
+  - 🇮🇳 印度 (India) 06 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +92,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - netmix
   - 🇮🇳 印度 (India) 03 - netmix
   - 🇮🇳 印度 (India) 04 - netmix
+  - 🇮🇳 印度 (India) 05 - netmix
+  - 🇮🇳 印度 (India) 06 - netmix
 rules:
 - MATCH,PROXIES

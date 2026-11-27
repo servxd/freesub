@@ -16,15 +16,66 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - netmix",
-      "server": "4f070970.con.metricdraft.tech",
+      "server": "65.109.171.194",
       "server_port": 443,
-      "password": "030e421e-9317-4cb8-8fbe-a07a565ad3db",
+      "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "4f070970.con.metricdraft.tech",
-        "insecure": false
+        "server_name": "mail1.besttotaldns.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - netmix",
+      "server": "2.27.122.255",
+      "server_port": 443,
+      "uuid": "e307f400-d65e-4afd-bfe2-9a54deca5678",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun9-37.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Uig-31Ux76EreEvx8Ntb0BwS1TkUGbu0LcsQsiAH6wg",
+          "short_id": "d52d3ecf49447c2a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - netmix",
+      "server": "201.58.176.19",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lesson9.schoolpizorbz.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LkXRut71yrHguNpmKfCrLITrAxk7amJiI2npZ4jRYx8",
+          "short_id": "06df4d3e93672c24"
+        }
       }
     },
     {
@@ -33,7 +84,9 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - netmix",
-        "🇫🇮 芬兰 (Finland) 02 - netmix"
+        "🇫🇮 芬兰 (Finland) 02 - netmix",
+        "🇫🇮 芬兰 (Finland) 03 - netmix",
+        "🇫🇮 芬兰 (Finland) 04 - netmix"
       ]
     },
     {
@@ -41,7 +94,9 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - netmix",
-        "🇫🇮 芬兰 (Finland) 02 - netmix"
+        "🇫🇮 芬兰 (Finland) 02 - netmix",
+        "🇫🇮 芬兰 (Finland) 03 - netmix",
+        "🇫🇮 芬兰 (Finland) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

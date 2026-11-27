@@ -4,24 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - netmix",
-      "server": "turkey-ip1.mmdaqaorg.xyz",
-      "server_port": 50738,
-      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
-      "tls": {
-        "enabled": true,
-        "server_name": "turkey-ip1.mmdaqaorg.xyz",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "server": "tr.subscriptionservice.ir",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
     },
     {
       "type": "selector",

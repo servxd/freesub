@@ -22,6 +22,20 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 03 - netmix
+  server: 104.21.44.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  tls: true
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - netmix
   - 🇦🇹 奥地利 (Austria) 02 - netmix
+  - 🇦🇹 奥地利 (Austria) 03 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - netmix
   - 🇦🇹 奥地利 (Austria) 02 - netmix
+  - 🇦🇹 奥地利 (Austria) 03 - netmix
 rules:
 - MATCH,PROXIES
