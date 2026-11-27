@@ -5,12 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - netmix
-  server: tr.subscriptionservice.ir
-  port: 2089
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

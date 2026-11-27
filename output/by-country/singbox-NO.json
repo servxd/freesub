@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇳🇴 挪威 (Norway) 01 - netmix",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16291,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 02 - netmix",
+      "tag": "🇳🇴 挪威 (Norway) 01 - netmix",
       "server": "185.213.23.63",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
@@ -24,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - netmix",
-        "🇳🇴 挪威 (Norway) 02 - netmix"
+        "🇳🇴 挪威 (Norway) 01 - netmix"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - netmix",
-        "🇳🇴 挪威 (Norway) 02 - netmix"
+        "🇳🇴 挪威 (Norway) 01 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

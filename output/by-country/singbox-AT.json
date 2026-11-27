@@ -12,30 +12,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - netmix",
-      "server": "ancient-haze-d203.vpnetwork3567.workers.dev",
-      "server_port": 443,
-      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
-      "tls": {
-        "enabled": true,
-        "server_name": "ancient-haze-d203.vpnetwork3567.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ancient-haze-d203.vpnetwork3567.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - netmix",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - netmix",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -47,22 +25,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 04 - netmix",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16308,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - netmix",
-        "🇦🇹 奥地利 (Austria) 02 - netmix",
-        "🇦🇹 奥地利 (Austria) 03 - netmix",
-        "🇦🇹 奥地利 (Austria) 04 - netmix"
+        "🇦🇹 奥地利 (Austria) 02 - netmix"
       ]
     },
     {
@@ -70,9 +38,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - netmix",
-        "🇦🇹 奥地利 (Austria) 02 - netmix",
-        "🇦🇹 奥地利 (Austria) 03 - netmix",
-        "🇦🇹 奥地利 (Austria) 04 - netmix"
+        "🇦🇹 奥地利 (Austria) 02 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -13,12 +13,12 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - netmix
-  server: theme.lovehk.xyz
+  server: 103.115.109.49
   port: 443
   udp: true
-  type: anytls
-  password: b0a3f86d-9db9-42df-9f4a-bf2de45a091c
-  sni: theme.lovehk.xyz
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES

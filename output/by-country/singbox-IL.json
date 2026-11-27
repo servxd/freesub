@@ -27,7 +27,27 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - netmix",
-      "server": "77.221.157.45",
+      "server": "196.196.204.137",
+      "server_port": 443,
+      "uuid": "26843758-24de-4f76-b5d0-624038e353c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "71b840t.de7.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
+          "short_id": "e572b6579ea525d4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 03 - netmix",
+      "server": "164.37.224.245",
       "server_port": 443,
       "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
@@ -35,7 +55,7 @@
         "server_name": "961ec0g.nl13.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -49,49 +69,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - netmix",
-      "server": "71b840t.de7.h1clayd.click",
-      "server_port": 443,
-      "uuid": "26843758-24de-4f76-b5d0-624038e353c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "71b840t.de7.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
-          "short_id": "e572b6579ea525d4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - netmix",
-      "server": "185.255.115.181",
-      "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "4935e4t.de25.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
-          "short_id": "6976d670818644cc"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇮🇱 以色列 (Israel) 05 - netmix",
+      "tag": "🇮🇱 以色列 (Israel) 04 - netmix",
       "server": "129.159.156.109",
       "server_port": 50160,
       "password": "f25f19f29ce3fb53a35bf1b35b452a43",
@@ -109,8 +88,7 @@
         "🇮🇱 以色列 (Israel) 01 - netmix",
         "🇮🇱 以色列 (Israel) 02 - netmix",
         "🇮🇱 以色列 (Israel) 03 - netmix",
-        "🇮🇱 以色列 (Israel) 04 - netmix",
-        "🇮🇱 以色列 (Israel) 05 - netmix"
+        "🇮🇱 以色列 (Israel) 04 - netmix"
       ]
     },
     {
@@ -120,8 +98,7 @@
         "🇮🇱 以色列 (Israel) 01 - netmix",
         "🇮🇱 以色列 (Israel) 02 - netmix",
         "🇮🇱 以色列 (Israel) 03 - netmix",
-        "🇮🇱 以色列 (Israel) 04 - netmix",
-        "🇮🇱 以色列 (Israel) 05 - netmix"
+        "🇮🇱 以色列 (Israel) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

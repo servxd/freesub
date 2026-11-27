@@ -16,14 +16,14 @@
       }
     },
     {
-      "type": "anytls",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - netmix",
-      "server": "theme.lovehk.xyz",
+      "server": "103.115.109.49",
       "server_port": 443,
-      "password": "b0a3f86d-9db9-42df-9f4a-bf2de45a091c",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "theme.lovehk.xyz",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },

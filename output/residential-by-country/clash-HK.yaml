@@ -4,18 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
-  server: 209.9.200.147
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
+  server: dog-hk.kunlun01dns.com
+  port: 21020
   udp: true
-  type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
-  tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
   server: 5641sdds.df6h451rh.xin
   port: 443
@@ -37,7 +33,7 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
 - name: AUTO
@@ -45,7 +41,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - netmix
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - netmix
 rules:

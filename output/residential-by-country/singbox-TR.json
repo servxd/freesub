@@ -6,14 +6,14 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - netmix",
-      "server": "v2new.nimbaha9.ir",
-      "server_port": 8080,
-      "uuid": "f279c19a-b324-40cf-af57-049f9b1b68f2",
+      "server": "v1.nimbaha13.ir",
+      "server_port": 8880,
+      "uuid": "1c942ed7-fef9-45c6-9873-91f93075185d",
       "transport": {
         "type": "ws",
-        "path": "/XDS45",
+        "path": "/dcfrtt",
         "headers": {
-          "Host": "v2new.nimbaha9.ir"
+          "Host": "v1.nimbaha13.ir"
         }
       }
     },

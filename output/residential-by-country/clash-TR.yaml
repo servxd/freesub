@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - netmix
-  server: v2new.nimbaha9.ir
-  port: 8080
+  server: v1.nimbaha13.ir
+  port: 8880
   udp: true
   type: vless
-  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  uuid: 1c942ed7-fef9-45c6-9873-91f93075185d
   network: ws
   ws-opts:
-    path: /XDS45
+    path: /dcfrtt
     headers:
-      Host: v2new.nimbaha9.ir
+      Host: v1.nimbaha13.ir
 proxy-groups:
 - name: PROXIES
   type: select
