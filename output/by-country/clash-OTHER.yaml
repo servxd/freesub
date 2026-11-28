@@ -5,37 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - netmix
-  server: cf.877771.xyz
+  server: 188.114.97.6
   port: 443
   udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /tyxyws
     headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - netmix
-  server: cf.877771.xyz
+  server: 188.114.97.6
   port: 443
   udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - netmix
-  server: cf.877771.xyz
+  server: cf.0sm.com
   port: 443
   udp: true
   type: vmess
@@ -51,7 +50,23 @@ proxies:
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 04 - netmix
-  server: cf.877771.xyz
+  server: cf.0sm.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 05 - netmix
+  server: cf.0sm.com
   port: 443
   udp: true
   type: vmess
@@ -66,22 +81,8 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 05 - netmix
-  server: cf.877771.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
 - name: 🌐 其他地区 (Other) 06 - netmix
-  server: cf.877771.xyz
+  server: cf.0sm.com
   port: 443
   udp: true
   type: vmess
@@ -97,16 +98,19 @@ proxies:
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 07 - netmix
-  server: 104.21.0.1
-  port: 80
+  server: cf.0sm.com
+  port: 443
   udp: true
   type: vmess
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 08 - netmix
@@ -135,6 +139,19 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 10 - netmix
+  server: 104.21.0.1
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,6 +166,7 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - netmix
   - 🌐 其他地区 (Other) 08 - netmix
   - 🌐 其他地区 (Other) 09 - netmix
+  - 🌐 其他地区 (Other) 10 - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -163,5 +181,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - netmix
   - 🌐 其他地区 (Other) 08 - netmix
   - 🌐 其他地区 (Other) 09 - netmix
+  - 🌐 其他地区 (Other) 10 - netmix
 rules:
 - MATCH,PROXIES

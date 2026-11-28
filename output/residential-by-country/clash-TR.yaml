@@ -4,12 +4,12 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 (移动家宽) - netmix
-  server: dog-hk.kunlun01dns.com
-  port: 21021
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - netmix
+  server: Ir.wbzo.ir
+  port: 2070
   udp: true
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
   alterId: 0
   cipher: auto
 proxy-groups:
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 (移动家宽) - netmix
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 (移动家宽) - netmix
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - netmix
 rules:
 - MATCH,PROXIES

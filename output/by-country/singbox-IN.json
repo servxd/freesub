@@ -38,16 +38,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 03 - netmix",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - netmix",
+      "tag": "🇮🇳 印度 (India) 03 - netmix",
       "server": "147.93.171.8",
       "server_port": 8443,
       "uuid": "591e7de6-f2dd-4ff9-ae21-8e00d5affa2a",
@@ -73,7 +65,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - netmix",
+      "tag": "🇮🇳 印度 (India) 04 - netmix",
       "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
       "server_port": 443,
       "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
@@ -88,18 +80,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 06 - netmix",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -107,9 +87,7 @@
         "🇮🇳 印度 (India) 01 - netmix",
         "🇮🇳 印度 (India) 02 - netmix",
         "🇮🇳 印度 (India) 03 - netmix",
-        "🇮🇳 印度 (India) 04 - netmix",
-        "🇮🇳 印度 (India) 05 - netmix",
-        "🇮🇳 印度 (India) 06 - netmix"
+        "🇮🇳 印度 (India) 04 - netmix"
       ]
     },
     {
@@ -119,9 +97,7 @@
         "🇮🇳 印度 (India) 01 - netmix",
         "🇮🇳 印度 (India) 02 - netmix",
         "🇮🇳 印度 (India) 03 - netmix",
-        "🇮🇳 印度 (India) 04 - netmix",
-        "🇮🇳 印度 (India) 05 - netmix",
-        "🇮🇳 印度 (India) 06 - netmix"
+        "🇮🇳 印度 (India) 04 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

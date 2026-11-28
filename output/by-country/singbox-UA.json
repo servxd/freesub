@@ -15,14 +15,15 @@
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "bitter-math-4364.vpnetwork3567.workers.dev"
-        }
+        "path": "/"
       }
     },
     {

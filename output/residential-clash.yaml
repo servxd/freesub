@@ -4,60 +4,36 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  server: 47.254.128.109
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
-  server: dog-tw.kunlun01dns.com
-  port: 21036
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇨🇳 CN 03 (移动家宽) - netmix
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 04 (移动家宽) - netmix
-  server: 8.209.117.187
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - netmix
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
-  server: mfjh645drfj1dr6j5.df6h451rh.xin
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
+  server: 47.254.128.109
   port: 443
   udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
-  server: rtifgjdr.df6h451rh.xin
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇩🇪 德国 (Germany) 03 (移动家宽) - netmix
+  server: 8.209.80.17
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
   password: 2902c46c8493
-  sni: docs.microsoft.com
+  sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
   server: a54ge.df6h451rh.xin
   port: 443
   udp: true
@@ -65,7 +41,7 @@ proxies:
   password: 0324fbc29561
   sni: docs.microsoft.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - netmix
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
   server: 5641sdds.df6h451rh.xin
   port: 443
   udp: true
@@ -73,33 +49,47 @@ proxies:
   password: 0324fbc29561
   sni: images.ctfassets.net
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - netmix
+  server: ibsdsf.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - netmix
+  server: Ir.wbzo.ir
+  port: 2070
+  udp: true
+  type: vmess
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
-  - 🇨🇳 CN 03 (移动家宽) - netmix
-  - 🇩🇪 德国 (Germany) 04 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - netmix
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - netmix
+  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - netmix
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (移动家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - netmix
-  - 🇨🇳 CN 03 (移动家宽) - netmix
-  - 🇩🇪 德国 (Germany) 04 (移动家宽) - netmix
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - netmix
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - netmix
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - netmix
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - netmix
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - netmix
+  - 🇩🇪 德国 (Germany) 03 (移动家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - netmix
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - netmix
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - netmix
+  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - netmix
 rules:
 - MATCH,PROXIES

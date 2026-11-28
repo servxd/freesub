@@ -18,7 +18,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - netmix
-  server: 193.148.253.75
+  server: 164.37.224.238
   port: 443
   udp: true
   type: vless
@@ -28,7 +28,7 @@ proxies:
     public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
     short-id: 8956c57cb4c4f8d2
   servername: f0d7aft.nl13.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03 - netmix
   server: 195.206.235.72
   port: 443

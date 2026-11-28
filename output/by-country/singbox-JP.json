@@ -4,57 +4,132 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 - netmix",
-      "server": "149.22.87.204",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "cf0091de-cde9-4be7-9368-4dfc2870db59",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 02 - netmix",
-      "server": "8.209.221.183",
-      "server_port": 5555,
-      "method": "aes-256-gcm",
-      "password": "123456"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 03 - netmix",
-      "server": "8.211.128.146",
-      "server_port": 5555,
-      "method": "aes-256-gcm",
-      "password": "123456"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - netmix",
-      "server": "8.216.18.167",
-      "server_port": 5555,
-      "method": "aes-256-gcm",
-      "password": "123456"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 05 - netmix",
-      "server": "168.138.205.100",
-      "server_port": 53758,
-      "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 - netmix",
       "server": "149.22.87.241",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 03 - netmix",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "091ea5fd-4e8d-4459-90af-e4d10179efff",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 04 - netmix",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "dbd6583b-cea2-4c81-8da7-d4a62108edbe",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 05 - netmix",
+      "server": "57.129.130.10",
+      "server_port": 52014,
+      "uuid": "395bab7e-302a-42b4-bac7-8acb7d36fdf3",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06 - netmix",
+      "server": "57.129.130.10",
+      "server_port": 52014,
+      "uuid": "bca740c6-6704-48ba-99da-7d7a31768d73",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 07 - netmix",
-      "server": "8.216.1.127",
+      "server": "8.211.131.30",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -62,6 +137,162 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 08 - netmix",
+      "server": "8.216.3.160",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 09 - netmix",
+      "server": "129.153.71.28",
+      "server_port": 28863,
+      "uuid": "7ec90e95-2de2-4e30-a647-e4a29c64f08f",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 10 - netmix",
+      "server": "8.216.5.89",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 11 - netmix",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "98286408-b683-4c0f-96c5-7e00da649d90",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 12 - netmix",
+      "server": "47.74.18.249",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 13 - netmix",
+      "server": "168.138.205.100",
+      "server_port": 53758,
+      "method": "aes-128-gcm",
+      "password": "Bwlqh7GcFB"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 14 - netmix",
+      "server": "47.91.15.175",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 15 - netmix",
+      "server": "8.209.245.25",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 16 - netmix",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "04d2aebd-246f-4348-805f-a8e6840365fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 17 - netmix",
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 18 - netmix",
+      "server": "jp-telegram-khp25-viber-09773510813.premiumx.giize.com",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "53dea5063dff45e4961fb9cba5d3f83a"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 19 - netmix",
+      "server": "80.240.18.227",
+      "server_port": 10051,
+      "uuid": "711b6476-63fc-4f01-b4e0-d44e17d79383",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 20 - netmix",
       "server": "149.22.87.240",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -69,30 +300,271 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 09 - netmix",
-      "server": "8.216.9.41",
+      "tag": "🇯🇵 日本 (Japan) 21 - netmix",
+      "server": "8.216.17.19",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 10 - netmix",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 22 - netmix",
+      "server": "147.45.42.73",
+      "server_port": 20443,
+      "uuid": "f293db4d-7ab1-4faf-bb15-89540d8709cb",
       "tls": {
         "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 23 - netmix",
+      "server": "178.105.133.160",
+      "server_port": 4443,
+      "uuid": "d43249eb-f80a-49a8-b2ed-9ddb08a448c7",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 24 - netmix",
+      "server": "178.105.133.160",
+      "server_port": 4443,
+      "uuid": "82b3631e-18ac-4d41-9737-5fb263228591",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 25 - netmix",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "4c6609bf-8457-4260-b4fa-321379e57a4e",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 26 - netmix",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "0a27dc3c-4c39-497c-8753-92bff7a8e3a9",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 27 - netmix",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "201e0019-2e79-4147-8a09-e510d630abeb",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 28 - netmix",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "d44da6cd-10d2-4189-a167-49e9f35c7143",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 29 - netmix",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "72af1965-ec91-4376-82b1-75be51885506",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 30 - netmix",
+      "server": "147.45.42.73",
+      "server_port": 20443,
+      "uuid": "fcbb9617-7b3c-4b21-8a91-a57350a75222",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 31 - netmix",
+      "server": "178.105.133.160",
+      "server_port": 4443,
+      "uuid": "4d2d8c67-74f2-4a7d-afeb-6f604b3fc00c",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 32 - netmix",
+      "server": "79.137.199.52",
+      "server_port": 21,
+      "uuid": "f346f223-ebf6-4da3-955e-425de7e9c372",
+      "tls": {
+        "enabled": true,
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 11 - netmix",
-      "server": "8.209.247.109",
-      "server_port": 443,
-      "password": "usqmqUKJFIlCmvkCNSY64L3k",
+      "tag": "🇯🇵 日本 (Japan) 33 - netmix",
+      "server": "129.225.181.46",
+      "server_port": 8443,
+      "password": "oracle_hy2_pass_2026",
       "tls": {
         "enabled": true,
         "server_name": "bing.com",
@@ -100,8 +572,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 34 - netmix",
+      "server": "47.245.54.15",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 35 - netmix",
       "server": "50.7.159.242",
       "server_port": 443,
       "uuid": "8840fac2-5361-4cb6-b887-cd1b95092394",
@@ -117,7 +597,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 36 - netmix",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "a1324b20-596e-4c9e-9538-97322bac22f0",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 37 - netmix",
       "server": "158.101.151.157",
       "server_port": 443,
       "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
@@ -138,10 +641,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - netmix",
-      "server": "198.13.53.39",
+      "tag": "🇯🇵 日本 (Japan) 38 - netmix",
+      "server": "5.75.195.83",
+      "server_port": 56879,
+      "uuid": "dd3a7790-90b9-4598-969e-c34647f36fc4",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 39 - netmix",
+      "server": "172.237.14.142",
       "server_port": 443,
-      "uuid": "8f21c635-ef0a-4b05-8356-f44d463b6e34",
+      "uuid": "323aa578-bddb-47ed-bdb6-5650ade5825c",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -151,8 +677,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k",
-          "short_id": "7a7cc838"
+          "public_key": "UPeN2wAl3WQKsj-IchFF-81OnbhP1FQJ0EtcBFQn0Ak",
+          "short_id": "6093f81a"
         }
       },
       "transport": {
@@ -165,19 +691,290 @@
     },
     {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 15 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 40 - netmix",
+      "server": "dog-jp.kunlun01dns.com",
+      "server_port": 21016,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 41 - netmix",
+      "server": "172.105.197.24",
+      "server_port": 443,
+      "uuid": "81f4e114-5a60-41b5-9038-8d742380c84f",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms",
+          "short_id": "772bef67"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 42 - netmix",
       "server": "161.33.20.255",
       "server_port": 8880,
       "uuid": "e0856508-d693-450a-a099-455091dc4f25",
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "e0856508-d693-450a-a099-455091dc4f25-vm"
+        "path": "/e0856508-d693-450a-a099-455091dc4f25-vm"
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 43 - netmix",
+      "server": "23.27.11.86",
+      "server_port": 443,
+      "uuid": "e8a346c2-e14c-4f82-876f-367dc19ee541",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.burmy.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 44 - netmix",
+      "server": "84.22.150.39",
+      "server_port": 7443,
+      "uuid": "5cc814de-2bbb-4409-ad8c-ee841ca7bad1",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 45 - netmix",
+      "server": "84.22.150.39",
+      "server_port": 7443,
+      "uuid": "9d5cbb90-876b-448d-9874-27ab35bae6e7",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 46 - netmix",
+      "server": "172.238.18.103",
+      "server_port": 443,
+      "uuid": "f4a4498a-c02f-4862-93ae-8f495c9cd2c0",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BDt3yJpYIovC6b1iJF2h8qH4LfQAoSC0u3iVa0cFeSM",
+          "short_id": "6ff775ae"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 47 - netmix",
+      "server": "139.162.91.247",
+      "server_port": 443,
+      "uuid": "8cfdacf8-e781-42f0-9872-8d1d22469de5",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_gFFckW3h8hFfllawgec9U2PDBeLJeCK_Jgk1S5tgC8",
+          "short_id": "536d7739"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 48 - netmix",
+      "server": "154.31.112.237",
+      "server_port": 26418,
+      "uuid": "22947ea0-b253-4f94-9d55-886472c31b20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 49 - netmix",
+      "server": "154.31.112.237",
+      "server_port": 26418,
+      "uuid": "9e53ce49-fb61-45c3-a3c1-bd8df1f9749f",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 50 - netmix",
+      "server": "154.31.112.237",
+      "server_port": 26418,
+      "uuid": "4a98013d-7ccb-477b-b613-39a3cff12144",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 51 - netmix",
+      "server": "139.162.91.224",
+      "server_port": 443,
+      "uuid": "ff3038b1-a2f5-428f-89cd-5d5e4efba8e7",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk",
+          "short_id": "e5b03494"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 52 - netmix",
+      "server": "107.191.53.86",
+      "server_port": 4798,
+      "uuid": "2b7eed58-3e9a-44ea-adda-acf914fb57ed",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 53 - netmix",
       "server": "149.28.29.156",
       "server_port": 443,
       "uuid": "aa1a9052-720f-4bb0-92be-21b6baf9f386",
@@ -204,34 +1001,814 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 17 - netmix",
-      "server": "23.27.11.86",
+      "tag": "🇯🇵 日本 (Japan) 54 - netmix",
+      "server": "139.162.101.74",
       "server_port": 443,
-      "uuid": "e8a346c2-e14c-4f82-876f-367dc19ee541",
-      "flow": "xtls-rprx-vision",
+      "uuid": "1e709d98-d4c3-45c1-bdcc-4268cf83eff8",
       "tls": {
         "enabled": true,
-        "server_name": "jp.burmy.xyz",
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI",
+          "short_id": "7e1e09f4"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 55 - netmix",
+      "server": "89.22.224.146",
+      "server_port": 43788,
+      "uuid": "49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 56 - netmix",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "fb4c1c39-2204-43bb-853c-f8579a77feb4",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 57 - netmix",
+      "server": "198.13.53.39",
+      "server_port": 443,
+      "uuid": "8f21c635-ef0a-4b05-8356-f44d463b6e34",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k",
+          "short_id": "7a7cc838"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 58 - netmix",
+      "server": "172.105.203.15",
+      "server_port": 443,
+      "uuid": "c8c9b995-b4b9-4915-9c7d-dee94aa733ba",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",
+          "short_id": "0784b134"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 59 - netmix",
+      "server": "57.129.52.47",
+      "server_port": 52014,
+      "uuid": "ecc4675b-1607-4699-8b20-23af97b671af",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 18 - netmix",
+      "tag": "🇯🇵 日本 (Japan) 60 - netmix",
+      "server": "liqzf4z-g05.jp05-h6-vm0.entry.fr0528.art",
+      "server_port": 46486,
+      "uuid": "8ba17b4b-600f-34d1-b082-548a7bc05d1e",
+      "security": "auto",
+      "alter_id": 1
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 61 - netmix",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "0985e268-5c1c-4141-9d96-139f8046c47c",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 62 - netmix",
+      "server": "139.162.91.228",
+      "server_port": 443,
+      "uuid": "911dce8c-a2d7-4267-acb4-1dec7cc360c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s73obybmPs4rzBkigf3zyIwAJWbRUnhPk3m6keetT3c",
+          "short_id": "d1244137"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 63 - netmix",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "12d65cdc-3391-4227-a2d5-52deb9948ae5",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 64 - netmix",
+      "server": "jp.075661.xyz",
+      "server_port": 46935,
+      "uuid": "7a87d516-058e-495a-bc09-e527178639b4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MmzrzoNr4muOhgi1ZAmzHbuciiKTWeu3hoi66Rp8Ai4",
+          "short_id": "e582410c5e3ccd68"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 65 - netmix",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "3dbf58d7-53fc-4fad-8779-1c867e024fd0",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 66 - netmix",
       "server": "dog-jp.kunlun01dns.com",
-      "server_port": 21016,
+      "server_port": 21017,
       "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
       "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 19 - netmix",
-      "server": "104.21.70.228",
-      "server_port": 443,
+      "tag": "🇯🇵 日本 (Japan) 67 - netmix",
+      "server": "45.32.57.15",
+      "server_port": 8443,
+      "uuid": "b69cf773-da16-486e-afce-a45b94f998b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "senflarelink-node-nwz76h.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/flow=",
+        "headers": {
+          "Host": "senflarelink-node-nwz76h.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 68 - netmix",
+      "server": "154.31.112.237",
+      "server_port": 26418,
+      "uuid": "4217be59-425f-472c-9948-cff6ecf7be0b",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 69 - netmix",
+      "server": "154.31.112.237",
+      "server_port": 26418,
+      "uuid": "6e2d24ab-a0c7-4913-88f3-34d4ef83adc2",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 70 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "3f87daa8-3af8-40a0-b655-127911e008dc",
+      "tls": {
+        "enabled": true,
+        "server_name": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 71 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "30b40928-f431-4c83-bfed-44f1243d16ff",
+      "tls": {
+        "enabled": true,
+        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 72 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "e27ffb19-314e-449b-ac9b-44b28cf50ef5",
+      "tls": {
+        "enabled": true,
+        "server_name": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 73 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "632b49e9-53ca-4a89-93f8-68c936a7d205",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 74 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "23b385cf-02c3-4df8-8402-11f1916418cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 75 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "a32f3ec6-d776-450e-9d97-9e2deb6c8421",
+      "tls": {
+        "enabled": true,
+        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 76 - netmix",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "66b076d4-519d-4b05-872e-d0366d15bace",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 77 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "0bfbfc56-cbda-4fb1-91e7-d571a7d3af55",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 78 - netmix",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "60dad3e5-86b7-437b-b42b-64e882955132",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 79 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "7659cb8c-9577-444b-bf47-f5a6d1ccc84e",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 80 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "259253f0-1c3e-42e3-a12e-2badd0a1f5bb",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 81 - netmix",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "9147bb5d-59bc-4180-b780-122242e133b2",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 82 - netmix",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "f077e9ba-5aa5-4b54-814e-4fbf87df4484",
+      "tls": {
+        "enabled": true,
+        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 83 - netmix",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "aa4bd34c-b94d-48f1-a7f0-e127e89ca7cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 84 - netmix",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "5745cc58-9352-4d71-96ab-e768fa1ef514",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 85 - netmix",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "e121912d-2931-4326-a7f8-2c1db8376b18",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 86 - netmix",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "8866f01d-a8cc-47d4-b066-434f917a1f1c",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 87 - netmix",
+      "server": "185.220.68.226",
+      "server_port": 20205,
+      "uuid": "8176bc8f-2c72-4496-8202-4be1d7c4b2bc",
+      "tls": {
+        "enabled": true,
+        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 88 - netmix",
+      "server": "185.220.68.226",
+      "server_port": 20205,
+      "uuid": "a1740f4c-a0c4-4f8d-b72c-7bdf50ec1193",
+      "tls": {
+        "enabled": true,
+        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 89 - netmix",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "168.138.43.75"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 90 - netmix",
+      "server": "38.207.178.173",
+      "server_port": 2087,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
@@ -251,46 +1828,69 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 20 - netmix",
-      "server": "129.225.181.46",
-      "server_port": 8443,
-      "password": "oracle_hy2_pass_2026",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 91 - netmix",
+      "server": "104.21.0.87",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 21 - netmix",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/cctv13.m3u8",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "None"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 22 - netmix",
-      "server": "djj.zjlo.top",
-      "server_port": 23169,
-      "uuid": "7318caa1-93d1-4a9d-c481-504599902700",
+      "tag": "🇯🇵 日本 (Japan) 92 - netmix",
+      "server": "116.213.43.43",
+      "server_port": 11101,
+      "uuid": "ca69a29d-60ef-433a-91bc-27537be993c8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "djj.zjlo.top",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2eUT-b2e2lghUKWM3qf8uI3_Dphg9whKrQ08o4S-bzw",
+          "short_id": "82f99830e7b834e2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 93 - netmix",
+      "server": "154.31.114.162",
+      "server_port": 8443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
         }
       }
     },
@@ -320,7 +1920,78 @@
         "🇯🇵 日本 (Japan) 19 - netmix",
         "🇯🇵 日本 (Japan) 20 - netmix",
         "🇯🇵 日本 (Japan) 21 - netmix",
-        "🇯🇵 日本 (Japan) 22 - netmix"
+        "🇯🇵 日本 (Japan) 22 - netmix",
+        "🇯🇵 日本 (Japan) 23 - netmix",
+        "🇯🇵 日本 (Japan) 24 - netmix",
+        "🇯🇵 日本 (Japan) 25 - netmix",
+        "🇯🇵 日本 (Japan) 26 - netmix",
+        "🇯🇵 日本 (Japan) 27 - netmix",
+        "🇯🇵 日本 (Japan) 28 - netmix",
+        "🇯🇵 日本 (Japan) 29 - netmix",
+        "🇯🇵 日本 (Japan) 30 - netmix",
+        "🇯🇵 日本 (Japan) 31 - netmix",
+        "🇯🇵 日本 (Japan) 32 - netmix",
+        "🇯🇵 日本 (Japan) 33 - netmix",
+        "🇯🇵 日本 (Japan) 34 - netmix",
+        "🇯🇵 日本 (Japan) 35 - netmix",
+        "🇯🇵 日本 (Japan) 36 - netmix",
+        "🇯🇵 日本 (Japan) 37 - netmix",
+        "🇯🇵 日本 (Japan) 38 - netmix",
+        "🇯🇵 日本 (Japan) 39 - netmix",
+        "🇯🇵 日本 (Japan) 40 - netmix",
+        "🇯🇵 日本 (Japan) 41 - netmix",
+        "🇯🇵 日本 (Japan) 42 - netmix",
+        "🇯🇵 日本 (Japan) 43 - netmix",
+        "🇯🇵 日本 (Japan) 44 - netmix",
+        "🇯🇵 日本 (Japan) 45 - netmix",
+        "🇯🇵 日本 (Japan) 46 - netmix",
+        "🇯🇵 日本 (Japan) 47 - netmix",
+        "🇯🇵 日本 (Japan) 48 - netmix",
+        "🇯🇵 日本 (Japan) 49 - netmix",
+        "🇯🇵 日本 (Japan) 50 - netmix",
+        "🇯🇵 日本 (Japan) 51 - netmix",
+        "🇯🇵 日本 (Japan) 52 - netmix",
+        "🇯🇵 日本 (Japan) 53 - netmix",
+        "🇯🇵 日本 (Japan) 54 - netmix",
+        "🇯🇵 日本 (Japan) 55 - netmix",
+        "🇯🇵 日本 (Japan) 56 - netmix",
+        "🇯🇵 日本 (Japan) 57 - netmix",
+        "🇯🇵 日本 (Japan) 58 - netmix",
+        "🇯🇵 日本 (Japan) 59 - netmix",
+        "🇯🇵 日本 (Japan) 60 - netmix",
+        "🇯🇵 日本 (Japan) 61 - netmix",
+        "🇯🇵 日本 (Japan) 62 - netmix",
+        "🇯🇵 日本 (Japan) 63 - netmix",
+        "🇯🇵 日本 (Japan) 64 - netmix",
+        "🇯🇵 日本 (Japan) 65 - netmix",
+        "🇯🇵 日本 (Japan) 66 - netmix",
+        "🇯🇵 日本 (Japan) 67 - netmix",
+        "🇯🇵 日本 (Japan) 68 - netmix",
+        "🇯🇵 日本 (Japan) 69 - netmix",
+        "🇯🇵 日本 (Japan) 70 - netmix",
+        "🇯🇵 日本 (Japan) 71 - netmix",
+        "🇯🇵 日本 (Japan) 72 - netmix",
+        "🇯🇵 日本 (Japan) 73 - netmix",
+        "🇯🇵 日本 (Japan) 74 - netmix",
+        "🇯🇵 日本 (Japan) 75 - netmix",
+        "🇯🇵 日本 (Japan) 76 - netmix",
+        "🇯🇵 日本 (Japan) 77 - netmix",
+        "🇯🇵 日本 (Japan) 78 - netmix",
+        "🇯🇵 日本 (Japan) 79 - netmix",
+        "🇯🇵 日本 (Japan) 80 - netmix",
+        "🇯🇵 日本 (Japan) 81 - netmix",
+        "🇯🇵 日本 (Japan) 82 - netmix",
+        "🇯🇵 日本 (Japan) 83 - netmix",
+        "🇯🇵 日本 (Japan) 84 - netmix",
+        "🇯🇵 日本 (Japan) 85 - netmix",
+        "🇯🇵 日本 (Japan) 86 - netmix",
+        "🇯🇵 日本 (Japan) 87 - netmix",
+        "🇯🇵 日本 (Japan) 88 - netmix",
+        "🇯🇵 日本 (Japan) 89 - netmix",
+        "🇯🇵 日本 (Japan) 90 - netmix",
+        "🇯🇵 日本 (Japan) 91 - netmix",
+        "🇯🇵 日本 (Japan) 92 - netmix",
+        "🇯🇵 日本 (Japan) 93 - netmix"
       ]
     },
     {
@@ -348,7 +2019,78 @@
         "🇯🇵 日本 (Japan) 19 - netmix",
         "🇯🇵 日本 (Japan) 20 - netmix",
         "🇯🇵 日本 (Japan) 21 - netmix",
-        "🇯🇵 日本 (Japan) 22 - netmix"
+        "🇯🇵 日本 (Japan) 22 - netmix",
+        "🇯🇵 日本 (Japan) 23 - netmix",
+        "🇯🇵 日本 (Japan) 24 - netmix",
+        "🇯🇵 日本 (Japan) 25 - netmix",
+        "🇯🇵 日本 (Japan) 26 - netmix",
+        "🇯🇵 日本 (Japan) 27 - netmix",
+        "🇯🇵 日本 (Japan) 28 - netmix",
+        "🇯🇵 日本 (Japan) 29 - netmix",
+        "🇯🇵 日本 (Japan) 30 - netmix",
+        "🇯🇵 日本 (Japan) 31 - netmix",
+        "🇯🇵 日本 (Japan) 32 - netmix",
+        "🇯🇵 日本 (Japan) 33 - netmix",
+        "🇯🇵 日本 (Japan) 34 - netmix",
+        "🇯🇵 日本 (Japan) 35 - netmix",
+        "🇯🇵 日本 (Japan) 36 - netmix",
+        "🇯🇵 日本 (Japan) 37 - netmix",
+        "🇯🇵 日本 (Japan) 38 - netmix",
+        "🇯🇵 日本 (Japan) 39 - netmix",
+        "🇯🇵 日本 (Japan) 40 - netmix",
+        "🇯🇵 日本 (Japan) 41 - netmix",
+        "🇯🇵 日本 (Japan) 42 - netmix",
+        "🇯🇵 日本 (Japan) 43 - netmix",
+        "🇯🇵 日本 (Japan) 44 - netmix",
+        "🇯🇵 日本 (Japan) 45 - netmix",
+        "🇯🇵 日本 (Japan) 46 - netmix",
+        "🇯🇵 日本 (Japan) 47 - netmix",
+        "🇯🇵 日本 (Japan) 48 - netmix",
+        "🇯🇵 日本 (Japan) 49 - netmix",
+        "🇯🇵 日本 (Japan) 50 - netmix",
+        "🇯🇵 日本 (Japan) 51 - netmix",
+        "🇯🇵 日本 (Japan) 52 - netmix",
+        "🇯🇵 日本 (Japan) 53 - netmix",
+        "🇯🇵 日本 (Japan) 54 - netmix",
+        "🇯🇵 日本 (Japan) 55 - netmix",
+        "🇯🇵 日本 (Japan) 56 - netmix",
+        "🇯🇵 日本 (Japan) 57 - netmix",
+        "🇯🇵 日本 (Japan) 58 - netmix",
+        "🇯🇵 日本 (Japan) 59 - netmix",
+        "🇯🇵 日本 (Japan) 60 - netmix",
+        "🇯🇵 日本 (Japan) 61 - netmix",
+        "🇯🇵 日本 (Japan) 62 - netmix",
+        "🇯🇵 日本 (Japan) 63 - netmix",
+        "🇯🇵 日本 (Japan) 64 - netmix",
+        "🇯🇵 日本 (Japan) 65 - netmix",
+        "🇯🇵 日本 (Japan) 66 - netmix",
+        "🇯🇵 日本 (Japan) 67 - netmix",
+        "🇯🇵 日本 (Japan) 68 - netmix",
+        "🇯🇵 日本 (Japan) 69 - netmix",
+        "🇯🇵 日本 (Japan) 70 - netmix",
+        "🇯🇵 日本 (Japan) 71 - netmix",
+        "🇯🇵 日本 (Japan) 72 - netmix",
+        "🇯🇵 日本 (Japan) 73 - netmix",
+        "🇯🇵 日本 (Japan) 74 - netmix",
+        "🇯🇵 日本 (Japan) 75 - netmix",
+        "🇯🇵 日本 (Japan) 76 - netmix",
+        "🇯🇵 日本 (Japan) 77 - netmix",
+        "🇯🇵 日本 (Japan) 78 - netmix",
+        "🇯🇵 日本 (Japan) 79 - netmix",
+        "🇯🇵 日本 (Japan) 80 - netmix",
+        "🇯🇵 日本 (Japan) 81 - netmix",
+        "🇯🇵 日本 (Japan) 82 - netmix",
+        "🇯🇵 日本 (Japan) 83 - netmix",
+        "🇯🇵 日本 (Japan) 84 - netmix",
+        "🇯🇵 日本 (Japan) 85 - netmix",
+        "🇯🇵 日本 (Japan) 86 - netmix",
+        "🇯🇵 日本 (Japan) 87 - netmix",
+        "🇯🇵 日本 (Japan) 88 - netmix",
+        "🇯🇵 日本 (Japan) 89 - netmix",
+        "🇯🇵 日本 (Japan) 90 - netmix",
+        "🇯🇵 日本 (Japan) 91 - netmix",
+        "🇯🇵 日本 (Japan) 92 - netmix",
+        "🇯🇵 日本 (Japan) 93 - netmix"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
